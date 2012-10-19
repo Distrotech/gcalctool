@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Gcalctool MASTER\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcalctool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-22 17:13+0000\n"
-"PO-Revision-Date: 2012-09-23 09:23+0300\n"
+"POT-Creation-Date: 2012-10-15 04:33+0000\n"
+"PO-Revision-Date: 2012-10-17 23:50+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <>\n"
 "Language: et\n"
@@ -1072,6 +1072,12 @@ msgstr "Funktsioon '%s' on defineerimata"
 msgid "Unknown conversion"
 msgstr "Tundmatu teisendus"
 
+#. Uncategorized error. Show error token to user
+#, c-format
+msgid "Malformed expression at token '%s'"
+msgstr "Vigane avaldis '%s' juures"
+
+#. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
 msgid "Malformed expression"
 msgstr "Vigane avaldis"
