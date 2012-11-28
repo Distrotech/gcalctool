@@ -7,23 +7,23 @@
 #
 #
 # Prajasakti Localisation Team <localisation@prajasakti.com>, 2005.
-# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009.
+# Krishna Babu K <kkrothap@redhat.com>, 2008, 2009, 2012.
 # Praveen Illa <mail2ipn@gmail.com>, 2011, 2012.
-# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012
+# Sasi Bhushan Boddepalli <sasi@swecha.net>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcalctool.master.te\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcalctool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-04-27 03:27+0000\n"
-"PO-Revision-Date: 2012-06-21 13:21+0530\n"
-"Last-Translator: Sasi Bhushan Boddepalli <sasi@swecha.net>\n"
-"Language-Team: Telugu <indlinux-telugu@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2012-10-05 05:01+0000\n"
+"PO-Revision-Date: 2012-11-28 15:56+0530\n"
+"Last-Translator: Krishnababu Krothapalli <kkrothap@redhat.com>\n"
+"Language-Team: Telugu <Fedora-trans-te@redhat.com>\n"
+"Language: te\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: \n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Accessible name for the inverse button
@@ -72,8 +72,9 @@ msgstr "మెమోరీ"
 
 #. The label on the memory button
 #: ../data/buttons-advanced.ui.h:18 ../data/buttons-financial.ui.h:74
-msgid "<i>x</i>"
-msgstr "<i>x</i>"
+#: ../data/buttons-programming.ui.h:14
+msgid "x"
+msgstr "x"
 
 #. Accessible name for the absolute value button
 #: ../data/buttons-advanced.ui.h:20 ../data/buttons-programming.ui.h:4
@@ -119,7 +120,8 @@ msgid ""
 "investment of present value to a future value, at a fixed interest rate per "
 "compounding period."
 msgstr ""
-"ప్రస్తుత విలువనుండి భవిష్యవిలువకు యెంత పెట్టుబడిని పెంచుటకు యెన్ని కాంపౌండ్ ఆవృతాలు తప్పనిసరౌతాయో "
+"ప్రస్తుత విలువనుండి భవిష్యవిలువకు యెంత పెట్టుబడిని పెంచుటకు యెన్ని కాంపౌండ్ "
+"ఆవృతాలు తప్పనిసరౌతాయో "
 "లెక్కిస్తుంది, వొక్క కాంపౌండ్ అవృతానికి నిర్ధిష్ట వడ్డీ చొప్పున."
 
 #. Periodic Interest Rate Dialog: Label before future value input
@@ -138,7 +140,8 @@ msgid ""
 "Calculates the depreciation allowance on an asset for a specified period of "
 "time, using the double-declining balance method."
 msgstr ""
-"double-declining మిగులు పద్దతిని వుపయోగించి, తెలుపబడిన కాలపరిమితికి ఆస్తిపైన తరుగుదల భరణమును "
+"double-declining మిగులు పద్దతిని వుపయోగించి, తెలుపబడిన కాలపరిమితికి ఆస్తిపైన "
+"తరుగుదల భరణమును "
 "గణిస్తుంది."
 
 #. Gross Profit Margin Dialog: Label before cost input
@@ -169,7 +172,8 @@ msgid ""
 "payments at a periodic interest rate over the number of payment periods in "
 "the term."
 msgstr ""
-"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై ఆధారపడి, పెట్టుబడియొక్క భవిష్య "
+"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై "
+"ఆధారపడి, పెట్టుబడియొక్క భవిష్య "
 "విలువను లెక్కిస్తుంది."
 
 #. Payment Period Dialog: Label before periodic payment input
@@ -194,7 +198,8 @@ msgid ""
 "Calculates the resale price of a product, based on the product cost and the "
 "wanted gross profit margin."
 msgstr ""
-"ఉత్పత్తి ధర మరియు రావలిసిన స్థూల లాభం దృష్టిలో వుంచుకొని, ఉత్పత్తి యొక్క పునఃఅమ్మకం ధరను "
+"ఉత్పత్తి ధర మరియు రావలిసిన స్థూల లాభం దృష్టిలో వుంచుకొని, ఉత్పత్తి యొక్క "
+"పునఃఅమ్మకం ధరను "
 "లెక్కిస్తుంది."
 
 #. Gross Profit Margin Dialog: Label before margin input
@@ -214,7 +219,8 @@ msgid ""
 "Calculates the amount of the periodic payment of a loan, where payments are "
 "made at the end of each payment period. "
 msgstr ""
-"ఋణం(లోను) యొక్క వాయిదా చెల్లింపు మొత్తమును గణించు, ఇచట వాయిదా అనగా ప్రతి చెల్లింపు గడువు అంతములో "
+"ఋణం(లోను) యొక్క వాయిదా చెల్లింపు మొత్తమును గణించు, ఇచట వాయిదా అనగా ప్రతి "
+"చెల్లింపు గడువు అంతములో "
 "చెల్లించునది."
 
 #. Periodic Payment Dialog: Label before principal input
@@ -240,7 +246,8 @@ msgid ""
 "payments discounted at a periodic interest rate over the number of payment "
 "periods in the term. "
 msgstr ""
-"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై ఆధారపడి, పెట్టుబడియొక్క "
+"గడువు లోపల ఆవృత వడ్డీపై జరిపిన సమవిభజిత చెల్లింపులు పోను మిగిలిన దానిపై "
+"ఆధారపడి, పెట్టుబడియొక్క "
 "ప్రస్తుత విలువను లెక్కిస్తుంది."
 
 #. Title of Periodic Interest Rate dialog
@@ -255,7 +262,8 @@ msgid ""
 "Calculates the periodic interest necessary to increase an investment to a "
 "future value, over the number of compounding periods. "
 msgstr ""
-"కౌంపౌండింగ్ ఆవృతాల నందు, భవిష్య విలువనకు పెట్టుబడిని పెంచుటకు తప్పనిసరైన ఆవృత వడ్డీను "
+"కౌంపౌండింగ్ ఆవృతాల నందు, భవిష్య విలువనకు పెట్టుబడిని పెంచుటకు తప్పనిసరైన ఆవృత "
+"వడ్డీను "
 "లెక్కగడుతుంది."
 
 #. Title of Straight-Line Depreciation dialog
@@ -281,8 +289,10 @@ msgid ""
 "over the useful life of an asset. The useful life is the number of periods, "
 "typically years, over which an asset is depreciated. "
 msgstr ""
-"ఒక ఆస్థి యొక్క స్ట్రైల్-లైన్ తరుగుదలను వొక కాలానికి లెక్కిస్తుంది. తరుగుదల యొక్క స్ట్రైట్-లైన్ విధానము "
-"అస్తియొక్క వుపయోగకర జీవితకాలమునందు తరుగుదల ధరను సరిమానంలో విభజించుతుంది. ఉపయోగకర జీవిత కాలం "
+"ఒక ఆస్థి యొక్క స్ట్రైల్-లైన్ తరుగుదలను వొక కాలానికి లెక్కిస్తుంది. తరుగుదల "
+"యొక్క స్ట్రైట్-లైన్ విధానము "
+"అస్తియొక్క వుపయోగకర జీవితకాలమునందు తరుగుదల ధరను సరిమానంలో విభజించుతుంది. "
+"ఉపయోగకర జీవిత కాలం "
 "అంటే, వొక ఆస్తి యెన్ని సమయాలు సాధారణంగా సంవత్సరాలు, తరుగుచేయబడుతుందో."
 
 #. Title of Sum-of-the-Years'-Digits Depreciation dialog
@@ -299,9 +309,12 @@ msgid ""
 "occurs in earlier periods than in later ones. The useful life is the number "
 "of periods, typically years, over which an asset is depreciated. "
 msgstr ""
-"Sum-Of-The-Years'-Digits పద్దతిని ఉపయోగించి, ఆస్తి పైన తరుగుదల భరణమును తెలుపబడిన "
-"కాలమునకు లెక్కిస్తుంది. తరుగుదల యొక్క ఈ పద్దతి తరుగుదల రేటును త్వరుణీకరిస్తుంది, అందువలన "
-"ఎక్కువ తరుగుదల ఖర్చు తరువాతి సమయాలకన్నా ముందల వాటిలో అవసరమౌతుంది. ఎన్ని కాలపరిమితులకు, సాదారణంగా "
+"Sum-Of-The-Years'-Digits పద్దతిని ఉపయోగించి, ఆస్తి పైన తరుగుదల భరణమును "
+"తెలుపబడిన "
+"కాలమునకు లెక్కిస్తుంది. తరుగుదల యొక్క ఈ పద్దతి తరుగుదల రేటును "
+"త్వరుణీకరిస్తుంది, అందువలన "
+"ఎక్కువ తరుగుదల ఖర్చు తరువాతి సమయాలకన్నా ముందల వాటిలో అవసరమౌతుంది. ఎన్ని "
+"కాలపరిమితులకు, సాదారణంగా "
 "సంవత్సరాలకు, ఆస్తి తరుగుదలకు గురిఅవుతుందో అది వుపయోగకర జీవితం."
 
 #. Title of Payment Period dialog
@@ -321,7 +334,8 @@ msgid ""
 "of an ordinary annuity, to accumulate a future value, at a periodic interest "
 "rate."
 msgstr ""
-"ఆవర్తన వడ్డీ రేటువద్ద, భవిష్య విలువను కూడగట్టుటకు, వొక సాధారణ వార్షిక మొత్తము సమయంలో యెన్ని "
+"ఆవర్తన వడ్డీ రేటువద్ద, భవిష్య విలువను కూడగట్టుటకు, వొక సాధారణ వార్షిక మొత్తము "
+"సమయంలో యెన్ని "
 "చెల్లింపు సమయాలు వుండాలో లెక్కగడుతుంది."
 
 #. Calculates the number of compounding periods necessary to increase an investment of present value pv to a future value of fv, at a fixed interest rate of int per compounding period. See also: http://en.wikipedia.org/wiki/Compound_interest
@@ -373,11 +387,6 @@ msgstr "Pmt"
 #: ../data/buttons-financial.ui.h:96
 msgid "Gpm"
 msgstr "Gpm"
-
-#. The label on the memory button
-#: ../data/buttons-programming.ui.h:14
-msgid "x"
-msgstr "x"
 
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
@@ -433,8 +442,8 @@ msgid "64-bit"
 msgstr "64-బిట్"
 
 #. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/math-preferences.c:231
-#: ../src/math-window.c:369
+#: ../data/preferences.ui.h:9 ../src/gcalctool.c:522
+#: ../src/math-preferences.c:231
 msgid "Preferences"
 msgstr "ప్రాధాన్యతలు"
 
@@ -464,7 +473,7 @@ msgid "Show _thousands separators"
 msgstr "వేలను వేరు చేయువాటిని చూపించు (_t)"
 
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:493
+#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:243
 msgid "Calculator"
 msgstr "గణన పరికరం"
 
@@ -512,7 +521,9 @@ msgstr "చివరి సున్నాలను చూపించు"
 msgid ""
 "Indicates whether any trailing zeroes after the numeric point should be "
 "shown in the display value."
-msgstr "ప్రదర్శిత విలువనందు సంఖ్యా బిందువు తర్వాత ఏమైనా సున్నాలను చూపాలేమో సూచిస్తుంది."
+msgstr ""
+"ప్రదర్శిత విలువనందు సంఖ్యా బిందువు తర్వాత ఏమైనా సున్నాలను చూపాలేమో "
+"సూచిస్తుంది."
 
 #: ../data/org.gnome.gcalctool.gschema.xml.in.h:11
 msgid "Number format"
@@ -815,7 +826,7 @@ msgid "Error: the number of periods must be positive"
 msgstr "దోషం: ఆవర్తనాల సంఖ్య ధనాత్మకం అయివుండాలి"
 
 #. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:77
+#: ../src/gcalctool.c:79
 #, c-format
 msgid ""
 "Usage:\n"
@@ -825,7 +836,7 @@ msgstr ""
 "  %s — గణితశాస్త్ర గణనలను జరుపుతుంది."
 
 #. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:85
+#: ../src/gcalctool.c:87
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -841,7 +852,7 @@ msgstr ""
 "  --help-gtk                      GTK+ ఐచ్ఛికాలను చూపించు"
 
 #. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:96
+#: ../src/gcalctool.c:98
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -865,7 +876,7 @@ msgstr ""
 "  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:110
+#: ../src/gcalctool.c:112
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -875,16 +886,107 @@ msgstr ""
 "  -s, --solve <equation>          ఇచ్చిన సమీకరణాన్ని సాధించండి"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:154
+#: ../src/gcalctool.c:156
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "ఆర్గుమెంట్ --solve అనుదానికి పరిష్కరించుటకు వొక సమీకరణం కావాలి"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:164
+#: ../src/gcalctool.c:166
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "తెలియని ఆర్గుమెంట్ '%s'"
+
+#. Translators: Error message displayed when unable to launch help browser
+#: ../src/gcalctool.c:358
+msgid "Unable to open help file"
+msgstr "సహాయ ఫైలు తెరువలేకపోయింది"
+
+#. The translator credits. Please translate this with your name(s).
+#: ../src/gcalctool.c:390
+msgid "translator-credits"
+msgstr ""
+"Krishna Babu K <kkrothap@redhat.com> 2008, 2009.\n"
+"Praveen Illa <mail2ipn@gmail.com>, 2011."
+
+#. The license this software is under (GPL2+)
+#: ../src/gcalctool.c:393
+msgid ""
+"Gcalctool is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"Gcalctool is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
+msgstr ""
+"జికాల్సిటూల్ ఒక ఉచిత సాఫ్ట్‍వేర్; దీనిని మీరు ఫ్రీ సాఫ్ట్‍వేర్ ఫౌండేషన్ "
+"ప్రచురించిన విధంగా \n"
+"గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ నిబంధనల క్రింద పంచవచ్చు మరియు/లేదా సవరించవచ్చు; \n"
+"వెర్షన్ 2 లైసెన్స్, లేదా (మీ ఐచ్చికాన్ని బట్టి) \n"
+"ఏదైనా తరువాత వెర్షన్.\n"
+"జికాల్సిటూల్ అనేది ఏవిధమైన పూచికత్తులు లేకుండా; వ్యాపారానికి గాని \n"
+"లేదా ఒక ఖచ్చితమైన ప్రయోజనానికి ఉపయోగించవచ్చని కనీసం భావించిన పూచికత్తులు "
+"లేకుండా \n"
+"ఉపయోగపడుతుందనే నమ్మకంతో పంచబడుతుంది. మరిన్ని వివరాలకు \n"
+"గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ చూడండి.\n"
+"\n"
+"మీరు తప్పనిసరిగా జికాల్సిటూల్‌తో పాటు గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ \n"
+"నకలు కలిగివుండాలి; ఒకవేళ పొందకపోతే, Free Software Foundation, Inc.,\n"
+"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USAకు వ్రాయండి."
+
+#. Program name in the about dialog
+#: ../src/gcalctool.c:410
+msgid "Gcalctool"
+msgstr "జికాల్సిటూల్"
+
+#. Copyright notice in the about dialog
+#: ../src/gcalctool.c:414
+msgid "© 1986–2010 The Gcalctool authors"
+msgstr "© 1986-2008 జికాల్సిటూల్ రచయితలు"
+
+#. Short description in the about dialog
+#: ../src/gcalctool.c:418
+msgid "Calculator with financial and scientific modes."
+msgstr "ఆర్థిక మరియు శాస్త్రీయ విధములున్న గణన పరికరం."
+
+#: ../src/gcalctool.c:515
+msgid "Basic"
+msgstr "ప్రాథమికం "
+
+#: ../src/gcalctool.c:516
+msgid "Advanced"
+msgstr "ఆధునికం "
+
+#: ../src/gcalctool.c:517
+msgid "Financial"
+msgstr "ఆర్థిక"
+
+#: ../src/gcalctool.c:518
+msgid "Programming"
+msgstr "ప్రోగ్రామింగ్ "
+
+#: ../src/gcalctool.c:519
+msgid "Mode"
+msgstr "విధము "
+
+#: ../src/gcalctool.c:526
+msgid "About Calculator"
+msgstr "గణన పరికరం గురించి "
+
+#: ../src/gcalctool.c:527
+msgid "Help"
+msgstr "సహాయం "
+
+#: ../src/gcalctool.c:528
+msgid "Quit"
+msgstr "వదిలి పెట్టు "
 
 #. Tooltip for the Pi button
 #: ../src/math-buttons.c:94
@@ -1240,179 +1342,90 @@ msgstr "'%s' ప్రమేయం నిర్వచించబడలేదు
 msgid "Unknown conversion"
 msgstr "తెలియని పరివర్తనం"
 
+#. Uncategorized error. Show error token to user
+#: ../src/math-equation.c:1249
+#, c-format
+#| msgid "Malformed expression"
+msgid "Malformed expression at token '%s'"
+msgstr "టోకెన్ '%s' వద్ద తప్పైన సమీకరణం"
+
+#. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1250
+#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
 msgid "Malformed expression"
 msgstr "తప్పైన సమీకరణం"
 
-#: ../src/math-equation.c:1264
+#: ../src/math-equation.c:1271
 msgid "Calculating"
 msgstr "లెక్కిస్తున్నది"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1380
+#: ../src/math-equation.c:1387
 msgid "Need an integer to factorize"
 msgstr "కారణాంకాలు కట్టుటకు ఒక పూర్ణాంకం అవసరం"
 
 #. This message is displayed in the status bar when a bit
 #. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1452
+#: ../src/math-equation.c:1459
 msgid "No sane value to bitwise shift"
 msgstr "బిట్ వారీ షిఫ్ట్‍ చేయుటకు ఏ స్థిరచిత్త విలువలేదు"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1483
+#: ../src/math-equation.c:1490
 msgid "Displayed value not an integer"
 msgstr "ప్రదర్శించబడిన విలువ పూర్ణాంకం కాదు"
 
 #. Digits localized for the given language
-#: ../src/math-equation.c:1908
+#: ../src/math-equation.c:1915
 msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
 
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:236
+#: ../src/math-preferences.c:235
 msgid "_Close"
 msgstr "మూసివేయి (_C)"
 
 #. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
 #. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:246 ../src/unit-manager.c:54
+#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
 msgid "Degrees"
 msgstr "డిగ్రీలు"
 
 #. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:250 ../src/unit-manager.c:55
+#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
 msgid "Radians"
 msgstr "రేడియన్లు"
 
 #. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:254 ../src/unit-manager.c:56
+#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
 msgid "Gradians"
 msgstr "గ్రేడియన్లు"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:264
+#: ../src/math-preferences.c:263
 msgid "Automatic"
 msgstr "స్వయంచాలకం"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:268
+#: ../src/math-preferences.c:267
 msgid "Fixed"
 msgstr "స్థిర"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:272
+#: ../src/math-preferences.c:271
 msgid "Scientific"
 msgstr "శాస్త్రీయం"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:276
+#: ../src/math-preferences.c:275
 msgid "Engineering"
 msgstr "ఇంజనీరింగు"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:287
+#: ../src/math-preferences.c:286
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d దశాంశ స్థానాలను చూపించు (_p)"
-
-#. Translators: Error message displayed when unable to launch help browser
-#: ../src/math-window.c:171
-msgid "Unable to open help file"
-msgstr "సహాయ ఫైలు తెరువలేకపోయింది"
-
-#. The translator credits. Please translate this with your name(s).
-#: ../src/math-window.c:204
-msgid "translator-credits"
-msgstr ""
-"Krishna Babu K <kkrothap@redhat.com> 2008, 2009.\n"
-"Praveen Illa <mail2ipn@gmail.com>, 2011."
-
-#. The license this software is under (GPL2+)
-#: ../src/math-window.c:207
-msgid ""
-"Gcalctool is free software; you can redistribute it and/or modify\n"
-"it under the terms of the GNU General Public License as published by\n"
-"the Free Software Foundation; either version 2 of the License, or\n"
-"(at your option) any later version.\n"
-"\n"
-"Gcalctool is distributed in the hope that it will be useful,\n"
-"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-"GNU General Public License for more details.\n"
-"\n"
-"You should have received a copy of the GNU General Public License\n"
-"along with Gcalctool; if not, write to the Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
-msgstr ""
-"జికాల్సిటూల్ ఒక ఉచిత సాఫ్ట్‍వేర్; దీనిని మీరు ఫ్రీ సాఫ్ట్‍వేర్ ఫౌండేషన్ ప్రచురించిన విధంగా \n"
-"గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ నిబంధనల క్రింద పంచవచ్చు మరియు/లేదా సవరించవచ్చు; \n"
-"వెర్షన్ 2 లైసెన్స్, లేదా (మీ ఐచ్చికాన్ని బట్టి) \n"
-"ఏదైనా తరువాత వెర్షన్.\n"
-"జికాల్సిటూల్ అనేది ఏవిధమైన పూచికత్తులు లేకుండా; వ్యాపారానికి గాని \n"
-"లేదా ఒక ఖచ్చితమైన ప్రయోజనానికి ఉపయోగించవచ్చని కనీసం భావించిన పూచికత్తులు లేకుండా \n"
-"ఉపయోగపడుతుందనే నమ్మకంతో పంచబడుతుంది. మరిన్ని వివరాలకు \n"
-"గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ చూడండి.\n"
-"\n"
-"మీరు తప్పనిసరిగా జికాల్సిటూల్‌తో పాటు గ్నూ జనరల్ పబ్లిక్ లైసెన్స్ \n"
-"నకలు కలిగివుండాలి; ఒకవేళ పొందకపోతే, Free Software Foundation, Inc.,\n"
-"51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USAకు వ్రాయండి."
-
-#. Program name in the about dialog
-#: ../src/math-window.c:224
-msgid "Gcalctool"
-msgstr "జికాల్సిటూల్"
-
-#. Copyright notice in the about dialog
-#: ../src/math-window.c:228
-msgid "© 1986–2010 The Gcalctool authors"
-msgstr "© 1986-2008 జికాల్సిటూల్ రచయితలు"
-
-#. Short description in the about dialog
-#: ../src/math-window.c:232
-msgid "Calculator with financial and scientific modes."
-msgstr "ఆర్థిక మరియు శాస్త్రీయ విధములున్న గణన పరికరం."
-
-#: ../src/math-window.c:362
-#| msgid "_Basic"
-msgid "Basic"
-msgstr "ప్రాథమికం "
-
-#: ../src/math-window.c:363
-#| msgid "_Advanced"
-msgid "Advanced"
-msgstr "ఆధునికం "
-
-#: ../src/math-window.c:364
-#| msgid "_Financial"
-msgid "Financial"
-msgstr "ఆర్థిక"
-
-#: ../src/math-window.c:365
-#| msgid "_Programming"
-msgid "Programming"
-msgstr "ప్రోగ్రామింగ్ "
-
-#: ../src/math-window.c:366
-#| msgid "_Mode"
-msgid "Mode"
-msgstr "విధము "
-
-#: ../src/math-window.c:373
-#| msgid "Calculator"
-msgid "About Calculator"
-msgstr "గణన పరికరం గురించి "
-
-#: ../src/math-window.c:374
-#| msgid "_Help"
-msgid "Help"
-msgstr "సహాయం "
-
-#: ../src/math-window.c:375
-#| msgid "Quarts"
-msgid "Quit"
-msgstr "వదిలి పెట్టు "
 
 #. Translators: Error displayed when boolean AND attempted on non-integer values
 #: ../src/mp-binary.c:115
@@ -1493,7 +1506,8 @@ msgstr "మాడ్యులస్ భాగాహారం పూర్ణా�
 #: ../src/mp-trigonometric.c:310
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
-msgstr "π∕2 (90°) నుండి π (180°) యొక్క గుణిజాలయిన కోణాలకు టాంజెంటు నిర్వచించబడలేదు"
+msgstr ""
+"π∕2 (90°) నుండి π (180°) యొక్క గుణిజాలయిన కోణాలకు టాంజెంటు నిర్వచించబడలేదు"
 
 #. Translators: Error displayed when inverse sine value is undefined
 #: ../src/mp-trigonometric.c:355
@@ -2245,6 +2259,9 @@ msgstr "ద్రవ్యం"
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
+
+#~ msgid "<i>x</i>"
+#~ msgstr "<i>x</i>"
 
 #~ msgid "_Calculator"
 #~ msgstr "గణనపరికరం (_C)"
