@@ -6,16 +6,16 @@
 # Ravishankar Shrivastava <raviratlami@yahoo.com>, 2004.
 # Rajesh Ranjan <rranjan@redhat.com>, 2005, 2006, 2008, 2009, 2011.
 # Rajesh Ranjan <rajesh672@gmail.com>, 2009.
-# rajesh <rajesh>, 2012.
+# rajesh <rajesh>, 2012, 2013.
 # chandankumar <chandankumar.093047@gmail.com>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: gcalctool.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=gcalctool&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-10-05 05:01+0000\n"
-"PO-Revision-Date: 2012-11-23 13:51+0530\n"
-"Last-Translator: Rajesh Ranjan <rajesh>\n"
+"POT-Creation-Date: 2013-01-18 11:21+0000\n"
+"PO-Revision-Date: 2013-03-21 13:26+0530\n"
+"Last-Translator: raj <raj>\n"
 "Language-Team: Hindi <kde-i18n-doc@kde.org>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +65,7 @@ msgstr "वैज्ञानिक घटक"
 #. Accessible name for the memory value button
 #. Tooltip for the memory button
 #: ../data/buttons-advanced.ui.h:16 ../data/buttons-financial.ui.h:72
-#: ../src/math-buttons.c:222
+#: ../src/math-buttons.vala:384
 msgid "Memory"
 msgstr "मेमोरी"
 
@@ -93,7 +93,7 @@ msgstr "भंडारित करें"
 
 #. Title of Compounding Term dialog
 #. Tooltip for the compounding term button
-#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.c:246
+#: ../data/buttons-financial.ui.h:2 ../src/math-buttons.vala:400
 msgid "Compounding Term"
 msgstr "मिश्रित पद"
 
@@ -160,7 +160,7 @@ msgstr "अवधि (_P):"
 
 #. Title of Future Value dialog
 #. Tooltip for the future value button
-#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.c:252
+#: ../data/buttons-financial.ui.h:24 ../src/math-buttons.vala:404
 msgid "Future Value"
 msgstr "भविष्य मान"
 
@@ -187,7 +187,7 @@ msgstr "अवधि की संख्या (_N):"
 
 #. Title of Gross Profit Margin dialog
 #. Tooltip for the gross profit margin button
-#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.c:273
+#: ../data/buttons-financial.ui.h:32 ../src/math-buttons.vala:418
 msgid "Gross Profit Margin"
 msgstr "कुल लाभांश"
 
@@ -208,7 +208,7 @@ msgstr "हाशिया (_M):"
 
 #. Title of Periodic Payment dialog
 #. Tooltip for the periodic payment button
-#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.c:270
+#: ../data/buttons-financial.ui.h:38 ../src/math-buttons.vala:416
 msgid "Periodic Payment"
 msgstr "आवधिक भुगतान"
 
@@ -234,7 +234,7 @@ msgstr "पद"
 
 #. Title of Present Value dialog
 #. Tooltip for the present value button
-#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.c:267
+#: ../data/buttons-financial.ui.h:46 ../src/math-buttons.vala:414
 msgid "Present Value"
 msgstr "वर्तमान मान"
 
@@ -251,7 +251,7 @@ msgstr ""
 
 #. Title of Periodic Interest Rate dialog
 #. Tooltip for the periodic interest rate button
-#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.c:264
+#: ../data/buttons-financial.ui.h:50 ../src/math-buttons.vala:412
 msgid "Periodic Interest Rate"
 msgstr "कालिक ब्याज दर"
 
@@ -391,13 +391,13 @@ msgstr "Gpm"
 
 #. Accessible name for the shift left button
 #. Tooltip for the shift left button
-#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.c:240
+#: ../data/buttons-programming.ui.h:16 ../src/math-buttons.vala:396
 msgid "Shift Left"
 msgstr "शिफ्ट बायां"
 
 #. Accessible name for the shift right button
 #. Tooltip for the shift right button
-#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.c:243
+#: ../data/buttons-programming.ui.h:18 ../src/math-buttons.vala:398
 msgid "Shift Right"
 msgstr "दायां शिफ्ट"
 
@@ -408,7 +408,7 @@ msgstr "अक्षर जोड़ें"
 
 #. Title of insert character code dialog
 #. Tooltip for the insert character code button
-#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.c:225
+#: ../data/buttons-programming.ui.h:28 ../src/math-buttons.vala:386
 msgid "Insert Character Code"
 msgstr "अक्षर जोड़ें कोड"
 
@@ -422,59 +422,8 @@ msgstr "अक्षर (_a):"
 msgid "_Insert"
 msgstr "प्रविष्ट करें (_I)"
 
-#. Word size combo: 8 bits
-#: ../data/preferences.ui.h:2
-msgid "8-bit"
-msgstr "8- बिट"
-
-#. Word size combo: 16 bits
-#: ../data/preferences.ui.h:4
-msgid "16-bit"
-msgstr "16-बिट"
-
-#. Word size combo: 32 bits
-#: ../data/preferences.ui.h:6
-msgid "32-bit"
-msgstr "32- बिट"
-
-#. Word size combo: 64 bits
-#: ../data/preferences.ui.h:8
-msgid "64-bit"
-msgstr "64-बिट"
-
-#. Title of preferences dialog
-#: ../data/preferences.ui.h:9 ../src/gcalctool.c:522
-#: ../src/math-preferences.c:231
-msgid "Preferences"
-msgstr "वरीयताएं"
-
-#. Preferences dialog: Label for angle unit combo box
-#: ../data/preferences.ui.h:11
-msgid "_Angle units:"
-msgstr "कोण इकाई (_A):"
-
-#. Preferences dialog: Label for display format combo box
-#: ../data/preferences.ui.h:13
-msgid "Number _Format:"
-msgstr "संख्या प्रारूप (_F):"
-
-#. Preferences dialog: label for word size combo box
-#: ../data/preferences.ui.h:15
-msgid "Word _size:"
-msgstr "शब्द आकार (_s):"
-
-#. Preferences dialog: label for show trailing zeroes check button
-#: ../data/preferences.ui.h:17
-msgid "Show trailing _zeroes"
-msgstr "अंत मे अतिरिक्त शून्य दिखाएँ (_z)"
-
-#. Preferences dialog: label for show thousands separator check button
-#: ../data/preferences.ui.h:19
-msgid "Show _thousands separators"
-msgstr "हजार विभाजक दिखाएँ (_t)"
-
 #. Title of main window
-#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.c:243
+#: ../data/gcalctool.desktop.in.h:1 ../src/math-window.vala:29
 msgid "Calculator"
 msgstr "गणक"
 
@@ -583,252 +532,289 @@ msgstr "लक्ष्य इकाई"
 msgid "Units to convert the current calculation into"
 msgstr " इकाइयों जिसमे वर्तमान गणना को परिवर्तित करना हैं"
 
-#: ../src/currency-manager.c:30
+#: ../src/currency.vala:28
 msgid "UAE Dirham"
 msgstr "अरबी दीनार"
 
-#: ../src/currency-manager.c:31
+#: ../src/currency.vala:29
 msgid "Australian Dollar"
 msgstr "ऑस्ट्रेलियाई डालर"
 
-#: ../src/currency-manager.c:32
+#: ../src/currency.vala:30
 msgid "Bulgarian Lev"
 msgstr "बुल्गारियाई लेव"
 
-#: ../src/currency-manager.c:33
+#: ../src/currency.vala:31
 msgid "Bahraini Dinar"
 msgstr "बहारीनी दीनार"
 
-#: ../src/currency-manager.c:34
+#: ../src/currency.vala:32
 msgid "Brunei Dollar"
 msgstr "ब्रूनेई डालर"
 
-#: ../src/currency-manager.c:35
+#: ../src/currency.vala:33
 msgid "Brazilian Real"
 msgstr "ब्राजीलियाई रियाल"
 
-#: ../src/currency-manager.c:36
+#: ../src/currency.vala:34
 msgid "Botswana Pula"
 msgstr "बोत्सबाना पुला"
 
-#: ../src/currency-manager.c:37
+#: ../src/currency.vala:35
 msgid "Canadian Dollar"
 msgstr "कनाडाई डॉलर"
 
-#: ../src/currency-manager.c:38
+#: ../src/currency.vala:36
 msgid "CFA Franc"
 msgstr "CFA Franc"
 
-#: ../src/currency-manager.c:39
+#: ../src/currency.vala:37
 msgid "Swiss Franc"
 msgstr "स्विस फ्रॉक"
 
-#: ../src/currency-manager.c:40
+#: ../src/currency.vala:38
 msgid "Chilean Peso"
 msgstr "चिली पेसो"
 
-#: ../src/currency-manager.c:41
+#: ../src/currency.vala:39
 msgid "Chinese Yuan"
 msgstr "चीनी युआन"
 
-#: ../src/currency-manager.c:42
+#: ../src/currency.vala:40
 msgid "Colombian Peso"
 msgstr "कोलंबियाई पेसो"
 
-#: ../src/currency-manager.c:43
+#: ../src/currency.vala:41
 msgid "Czech Koruna"
 msgstr "चेक कोरूना"
 
-#: ../src/currency-manager.c:44
+#: ../src/currency.vala:42
 msgid "Danish Krone"
 msgstr "दानिश क्रोन"
 
-#: ../src/currency-manager.c:45
+#: ../src/currency.vala:43
 msgid "Algerian Dinar"
 msgstr "अल्जीरियाई दीनार"
 
-#: ../src/currency-manager.c:46
+#: ../src/currency.vala:44
 msgid "Estonian Kroon"
 msgstr "एस्टोनियाई क्रून"
 
-#: ../src/currency-manager.c:47
+#: ../src/currency.vala:45
 msgid "Euro"
 msgstr "यूरो"
 
-#: ../src/currency-manager.c:48
+#: ../src/currency.vala:46
 msgid "Pound Sterling"
 msgstr "पाउण्ड स्टर्लिंग"
 
-#: ../src/currency-manager.c:49
+#: ../src/currency.vala:47
 msgid "Hong Kong Dollar"
 msgstr "हांगकांग डॉलर"
 
-#: ../src/currency-manager.c:50
+#: ../src/currency.vala:48
 msgid "Croatian Kuna"
 msgstr "क्रोएशियाई कुना"
 
-#: ../src/currency-manager.c:51
+#: ../src/currency.vala:49
 msgid "Hungarian Forint"
 msgstr "हंगरियन फोरिंट"
 
-#: ../src/currency-manager.c:52
+#: ../src/currency.vala:50
 msgid "Indonesian Rupiah"
 msgstr "इण्डोनेशियाई रुपिया"
 
-#: ../src/currency-manager.c:53
+#: ../src/currency.vala:51
 msgid "Israeli New Shekel"
 msgstr "इसरायली न्यू शीकेल"
 
-#: ../src/currency-manager.c:54
+#: ../src/currency.vala:52
 msgid "Indian Rupee"
 msgstr "भारतीय रुपया"
 
-#: ../src/currency-manager.c:55
+#: ../src/currency.vala:53
 msgid "Iranian Rial"
 msgstr "ईरानी रियाल"
 
-#: ../src/currency-manager.c:56
+#: ../src/currency.vala:54
 msgid "Icelandic Krona"
 msgstr "आइसलैंडिक क्रोना"
 
-#: ../src/currency-manager.c:57
+#: ../src/currency.vala:55
 msgid "Japanese Yen"
 msgstr "जापानी येन"
 
-#: ../src/currency-manager.c:58
+#: ../src/currency.vala:56
 msgid "South Korean Won"
 msgstr "दक्षिणी कोरियाई वोन"
 
-#: ../src/currency-manager.c:59
+#: ../src/currency.vala:57
 msgid "Kuwaiti Dinar"
 msgstr "कुवैती दीनार"
 
-#: ../src/currency-manager.c:60
+#: ../src/currency.vala:58
 msgid "Kazakhstani Tenge"
 msgstr "कजाखस्तानी टेंगे"
 
-#: ../src/currency-manager.c:61
+#: ../src/currency.vala:59
 msgid "Sri Lankan Rupee"
 msgstr "श्री लंकान रुपये"
 
-#: ../src/currency-manager.c:62
+#: ../src/currency.vala:60
 msgid "Lithuanian Litas"
 msgstr "लिथुवानियाई लितास"
 
-#: ../src/currency-manager.c:63
+#: ../src/currency.vala:61
 msgid "Latvian Lats"
 msgstr "लातवियाई लाट्स"
 
-#: ../src/currency-manager.c:64
+#: ../src/currency.vala:62
 msgid "Libyan Dinar"
 msgstr "लीबियाई दीनार"
 
-#: ../src/currency-manager.c:65
+#: ../src/currency.vala:63
 msgid "Mauritian Rupee"
 msgstr "मारिशियन रूपये"
 
-#: ../src/currency-manager.c:66
+#: ../src/currency.vala:64
 msgid "Mexican Peso"
 msgstr "मेक्सिकन पेसो"
 
-#: ../src/currency-manager.c:67
+#: ../src/currency.vala:65
 msgid "Malaysian Ringgit"
 msgstr "मलेशियन रिंगित"
 
-#: ../src/currency-manager.c:68
+#: ../src/currency.vala:66
 msgid "Norwegian Krone"
 msgstr "नॉरवेजियाई क्रोन"
 
-#: ../src/currency-manager.c:69
+#: ../src/currency.vala:67
 msgid "Nepalese Rupee"
 msgstr "नेपाली रुपया"
 
-#: ../src/currency-manager.c:70
+#: ../src/currency.vala:68
 msgid "New Zealand Dollar"
 msgstr "न्यूजीलैंड डॉलर"
 
-#: ../src/currency-manager.c:71
+#: ../src/currency.vala:69
 msgid "Omani Rial"
 msgstr "ओमानी रियाल"
 
-#: ../src/currency-manager.c:72
+#: ../src/currency.vala:70
 msgid "Peruvian Nuevo Sol"
 msgstr "पेरुवियन नेवो सोल"
 
-#: ../src/currency-manager.c:73
+#: ../src/currency.vala:71
 msgid "Philippine Peso"
 msgstr "फिलिपीन पेसो"
 
-#: ../src/currency-manager.c:74
+#: ../src/currency.vala:72
 msgid "Pakistani Rupee"
 msgstr "पाकिस्तानी रूपये"
 
-#: ../src/currency-manager.c:75
+#: ../src/currency.vala:73
 msgid "Polish Zloty"
 msgstr "पोलिश ज्लोटी"
 
-#: ../src/currency-manager.c:76
+#: ../src/currency.vala:74
 msgid "Qatari Riyal"
 msgstr "कतारी रियाल"
 
-#: ../src/currency-manager.c:77
+#: ../src/currency.vala:75
 msgid "New Romanian Leu"
 msgstr "नया रोमानियाई लियू"
 
-#: ../src/currency-manager.c:78
+#: ../src/currency.vala:76
 msgid "Russian Rouble"
 msgstr "रूसी रूबल"
 
-#: ../src/currency-manager.c:79
+#: ../src/currency.vala:77
 msgid "Saudi Riyal"
 msgstr "सऊदी रियाल"
 
-#: ../src/currency-manager.c:80
+#: ../src/currency.vala:78
 msgid "Swedish Krona"
 msgstr "स्वीडिश क्रोना"
 
-#: ../src/currency-manager.c:81
+#: ../src/currency.vala:79
 msgid "Singapore Dollar"
 msgstr "सिंगापुर डॉलर"
 
-#: ../src/currency-manager.c:82
+#: ../src/currency.vala:80
 msgid "Thai Baht"
 msgstr "थाई बाह्ट"
 
-#: ../src/currency-manager.c:83
+#: ../src/currency.vala:81
 msgid "Tunisian Dinar"
 msgstr "ट्यूनिशियाई दीनार"
 
-#: ../src/currency-manager.c:84
+#: ../src/currency.vala:82
 msgid "New Turkish Lira"
 msgstr "न्यू तुर्कीश लीरा"
 
-#: ../src/currency-manager.c:85
+#: ../src/currency.vala:83
 msgid "T&T Dollar (TTD)"
 msgstr "T&T Dollar (TTD)"
 
-#: ../src/currency-manager.c:86
+#: ../src/currency.vala:84
 msgid "US Dollar"
 msgstr "यूएस डॉलर"
 
-#: ../src/currency-manager.c:87
+#: ../src/currency.vala:85
 msgid "Uruguayan Peso"
 msgstr "उरुगवेयन पेसो"
 
-#: ../src/currency-manager.c:88
+#: ../src/currency.vala:86
 msgid "Venezuelan Bolívar"
 msgstr "वेनेजुएलियन वोलिवार"
 
-#: ../src/currency-manager.c:89
+#: ../src/currency.vala:87
 msgid "South African Rand"
 msgstr "दक्षिण अफ्रीका रैंड"
 
-#: ../src/financial.c:70
+#: ../src/financial.vala:114
 msgid "Error: the number of periods must be positive"
 msgstr "त्रुटि: अवधियों की संख्या जरूर धनात्मक होनी चाहिए"
 
+#: ../src/gcalctool.vala:78
+msgid "Basic"
+msgstr "मूल"
+
+#: ../src/gcalctool.vala:79
+msgid "Advanced"
+msgstr "विस्तृत"
+
+#: ../src/gcalctool.vala:80
+msgid "Financial"
+msgstr "वित्तीय"
+
+#: ../src/gcalctool.vala:81
+msgid "Programming"
+msgstr "प्रोग्रामिंग"
+
+#: ../src/gcalctool.vala:82
+msgid "Mode"
+msgstr "मोड"
+
+#. Title of preferences dialog
+#: ../src/gcalctool.vala:85 ../src/math-preferences.vala:26
+msgid "Preferences"
+msgstr "वरीयताएं"
+
+#: ../src/gcalctool.vala:89
+msgid "About Calculator"
+msgstr "गणक के बारे में"
+
+#: ../src/gcalctool.vala:90
+msgid "Help"
+msgstr "मदद"
+
+#: ../src/gcalctool.vala:91
+msgid "Quit"
+msgstr "बाहर जाएँ"
+
 #. Description on how to use gcalctool displayed on command-line
-#: ../src/gcalctool.c:79
+#: ../src/gcalctool.vala:162
 #, c-format
 msgid ""
 "Usage:\n"
@@ -838,7 +824,7 @@ msgstr ""
 "  %s - गणितीय गणना करें"
 
 #. Description on gcalctool command-line help options displayed on command-line
-#: ../src/gcalctool.c:87
+#: ../src/gcalctool.vala:167
 #, c-format
 msgid ""
 "Help Options:\n"
@@ -854,7 +840,7 @@ msgstr ""
 "  --help-gtk                      Show GTK+ options"
 
 #. Description on gcalctool command-line GTK+ options displayed on command-line
-#: ../src/gcalctool.c:98
+#: ../src/gcalctool.vala:173
 #, c-format
 msgid ""
 "GTK+ Options:\n"
@@ -878,7 +864,7 @@ msgstr ""
 "  --g-fatal-warnings              Make all warnings fatal"
 
 #. Description on gcalctool application options displayed on command-line
-#: ../src/gcalctool.c:112
+#: ../src/gcalctool.vala:180
 #, c-format
 msgid ""
 "Application Options:\n"
@@ -888,29 +874,29 @@ msgstr ""
 "  -s, --solve <equation>          Solve the given equation"
 
 #. Error printed to stderr when user uses --solve argument without an equation
-#: ../src/gcalctool.c:156
+#: ../src/gcalctool.vala:220
 #, c-format
 msgid "Argument --solve requires an equation to solve"
 msgstr "Argument --solve requires an equation to solve"
 
 #. Error printed to stderr when user provides an unknown command-line argument
-#: ../src/gcalctool.c:166
+#: ../src/gcalctool.vala:230
 #, c-format
 msgid "Unknown argument '%s'"
 msgstr "अज्ञात वितर्क '%s'"
 
 #. Translators: Error message displayed when unable to launch help browser
-#: ../src/gcalctool.c:358
+#: ../src/gcalctool.vala:321
 msgid "Unable to open help file"
 msgstr "मदद फाइल खोलने में त्रुटि"
 
-#. The translator credits. Please translate this with your name(s).
-#: ../src/gcalctool.c:390
+#. The translator credits. Please translate this with your name (s).
+#: ../src/gcalctool.vala:351
 msgid "translator-credits"
 msgstr "राजेश रंजन (rranajn@redhat.com, rajeshkajha@yahoo.com)"
 
 #. The license this software is under (GPL2+)
-#: ../src/gcalctool.c:393
+#: ../src/gcalctool.vala:354
 msgid ""
 "Gcalctool is free software; you can redistribute it and/or modify\n"
 "it under the terms of the GNU General Public License as published by\n"
@@ -941,325 +927,294 @@ msgstr ""
 "51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA"
 
 #. Program name in the about dialog
-#: ../src/gcalctool.c:410
+#: ../src/gcalctool.vala:359
 msgid "Gcalctool"
 msgstr "जिकेल्कटूल"
 
 #. Copyright notice in the about dialog
-#: ../src/gcalctool.c:414
+#: ../src/gcalctool.vala:363
 msgid "© 1986–2010 The Gcalctool authors"
 msgstr "© 1986–2010 The Gcalctool authors"
 
 #. Short description in the about dialog
-#: ../src/gcalctool.c:418
+#: ../src/gcalctool.vala:367
 msgid "Calculator with financial and scientific modes."
 msgstr "वित्त और वैज्ञानिक मोड वाला गणक"
 
-#: ../src/gcalctool.c:515
-msgid "Basic"
-msgstr "मूल"
-
-#: ../src/gcalctool.c:516
-msgid "Advanced"
-msgstr "विस्तृत"
-
-#: ../src/gcalctool.c:517
-msgid "Financial"
-msgstr "वित्तीय"
-
-#: ../src/gcalctool.c:518
-msgid "Programming"
-msgstr "प्रोग्रामिंग"
-
-#: ../src/gcalctool.c:519
-msgid "Mode"
-msgstr "मोड"
-
-#: ../src/gcalctool.c:526
-msgid "About Calculator"
-msgstr "गणक के बारे में"
-
-#: ../src/gcalctool.c:527
-msgid "Help"
-msgstr "मदद"
-
-#: ../src/gcalctool.c:528
-msgid "Quit"
-msgstr "बाहर जाएँ"
-
+#. Configure buttons
 #. Tooltip for the Pi button
-#: ../src/math-buttons.c:94
+#: ../src/math-buttons.vala:298
 msgid "Pi [Ctrl+P]"
 msgstr "Pi [Ctrl+P]"
 
 #. Tooltip for the Euler's Number button
-#: ../src/math-buttons.c:97
+#: ../src/math-buttons.vala:300
 msgid "Euler’s Number"
 msgstr "इयुलर संख्या"
 
 #. Tooltip for the subscript button
-#: ../src/math-buttons.c:102
+#: ../src/math-buttons.vala:304
 msgid "Subscript mode [Alt]"
 msgstr "उपस्क्रिप्ट विधि [Alt]"
 
 #. Tooltip for the superscript button
-#: ../src/math-buttons.c:105
+#: ../src/math-buttons.vala:306
 msgid "Superscript mode [Ctrl]"
 msgstr "उपस्क्रिप्ट विधि [Ctrl]"
 
 #. Tooltip for the scientific exponent button
-#: ../src/math-buttons.c:108
+#: ../src/math-buttons.vala:308
 msgid "Scientific exponent [Ctrl+E]"
 msgstr "वैज्ञानिक घटक [Ctrl+E]"
 
 #. Tooltip for the add button
-#: ../src/math-buttons.c:111
+#: ../src/math-buttons.vala:310
 msgid "Add [+]"
 msgstr "जोड़ें [+]"
 
 #. Tooltip for the subtract button
-#: ../src/math-buttons.c:114
+#: ../src/math-buttons.vala:312
 msgid "Subtract [-]"
 msgstr "घटाना [-]"
 
 #. Tooltip for the multiply button
-#: ../src/math-buttons.c:117
+#: ../src/math-buttons.vala:314
 msgid "Multiply [*]"
 msgstr "गुणा [*]"
 
 #. Tooltip for the divide button
-#: ../src/math-buttons.c:120
+#: ../src/math-buttons.vala:316
 msgid "Divide [/]"
 msgstr "भाग [/]"
 
 #. Tooltip for the modulus divide button
-#: ../src/math-buttons.c:123
+#: ../src/math-buttons.vala:318
 msgid "Modulus divide"
 msgstr "मौड्यूलस विभाजन"
 
 #. Tooltip for the additional functions button
-#: ../src/math-buttons.c:126
+#: ../src/math-buttons.vala:320
 msgid "Additional Functions"
 msgstr "अतिरिक्त फंक्शन्स"
 
 #. Tooltip for the exponent button
-#: ../src/math-buttons.c:129
+#: ../src/math-buttons.vala:322
 msgid "Exponent [^ or **]"
 msgstr "घातांक [^ or **]"
 
 #. Tooltip for the square button
-#: ../src/math-buttons.c:132
+#: ../src/math-buttons.vala:324
 msgid "Square [Ctrl+2]"
 msgstr "वर्ग [Ctrl+2]"
 
 #. Tooltip for the percentage button
-#: ../src/math-buttons.c:135
+#: ../src/math-buttons.vala:326
 msgid "Percentage [%]"
 msgstr "प्रतिशत [%]"
 
 #. Tooltip for the factorial button
-#: ../src/math-buttons.c:138
+#: ../src/math-buttons.vala:328
 msgid "Factorial [!]"
 msgstr "फैक्टोरियल [!]"
 
 #. Tooltip for the absolute value button
-#: ../src/math-buttons.c:141
+#: ../src/math-buttons.vala:330
 msgid "Absolute value [|]"
 msgstr "निरपेक्ष मान [|]"
 
 #. Tooltip for the complex argument component button
-#: ../src/math-buttons.c:144
+#: ../src/math-buttons.vala:332
 msgid "Complex argument"
 msgstr "जटिल तर्क"
 
 #. Tooltip for the complex conjugate button
-#: ../src/math-buttons.c:147
+#: ../src/math-buttons.vala:334
 msgid "Complex conjugate"
 msgstr "जटिल कंजुगेट"
 
 #. Tooltip for the root button
-#: ../src/math-buttons.c:150
+#: ../src/math-buttons.vala:336
 msgid "Root [Ctrl+R]"
 msgstr "Root [Ctrl+R]"
 
 #. Tooltip for the square root button
-#: ../src/math-buttons.c:153
+#: ../src/math-buttons.vala:338
 msgid "Square root [Ctrl+R]"
 msgstr "वर्गमूल [Ctrl+R]"
 
 #. Tooltip for the logarithm button
-#: ../src/math-buttons.c:156
+#: ../src/math-buttons.vala:340
 msgid "Logarithm"
 msgstr "लघुगणक"
 
 #. Tooltip for the natural logarithm button
-#: ../src/math-buttons.c:159
+#: ../src/math-buttons.vala:342
 msgid "Natural Logarithm"
 msgstr "प्राकृतिक लघुगणक"
 
 #. Tooltip for the sine button
-#: ../src/math-buttons.c:162
+#: ../src/math-buttons.vala:344
 msgid "Sine"
 msgstr "ज्या"
 
 #. Tooltip for the cosine button
-#: ../src/math-buttons.c:165
+#: ../src/math-buttons.vala:346
 msgid "Cosine"
 msgstr "कोसाइन"
 
 #. Tooltip for the tangent button
-#: ../src/math-buttons.c:168
+#: ../src/math-buttons.vala:348
 msgid "Tangent"
 msgstr "स्पर्शज्या"
 
 #. Tooltip for the hyperbolic sine button
-#: ../src/math-buttons.c:171
+#: ../src/math-buttons.vala:350
 msgid "Hyperbolic Sine"
 msgstr "अतिपरवलयिक साइन"
 
 #. Tooltip for the hyperbolic cosine button
-#: ../src/math-buttons.c:174
+#: ../src/math-buttons.vala:352
 msgid "Hyperbolic Cosine"
 msgstr "अतिपरवलयिक कोसाइन"
 
 #. Tooltip for the hyperbolic tangent button
-#: ../src/math-buttons.c:177
+#: ../src/math-buttons.vala:354
 msgid "Hyperbolic Tangent"
 msgstr "अतिपरवलयिक टैन्जेन्ट"
 
 #. Tooltip for the inverse button
-#: ../src/math-buttons.c:180
+#: ../src/math-buttons.vala:356
 msgid "Inverse [Ctrl+I]"
 msgstr "उलटा [Ctrl+I]"
 
 #. Tooltip for the boolean AND button
-#: ../src/math-buttons.c:183
+#: ../src/math-buttons.vala:358
 msgid "Boolean AND"
 msgstr "बूलियन AND"
 
 #. Tooltip for the boolean OR button
-#: ../src/math-buttons.c:186
+#: ../src/math-buttons.vala:360
 msgid "Boolean OR"
 msgstr "बूलियन OR"
 
 #. Tooltip for the exclusive OR button
-#: ../src/math-buttons.c:189
+#: ../src/math-buttons.vala:362
 msgid "Boolean Exclusive OR"
 msgstr "बुलियन एक्सक्लुसिव या"
 
 #. Tooltip for the boolean NOT button
-#: ../src/math-buttons.c:192
+#: ../src/math-buttons.vala:364
 msgid "Boolean NOT"
 msgstr "बूलियन NOT"
 
 #. Tooltip for the integer component button
-#: ../src/math-buttons.c:195 ../src/math-buttons.c:983
+#: ../src/math-buttons.vala:366 ../src/math-buttons.vala:809
 msgid "Integer Component"
 msgstr "पूर्णांक घटक"
 
 #. Tooltip for the fractional component button
-#: ../src/math-buttons.c:198 ../src/math-buttons.c:985
+#: ../src/math-buttons.vala:368 ../src/math-buttons.vala:811
 msgid "Fractional Component"
 msgstr "फैक्टोरियल घटक"
 
 #. Tooltip for the real component button
-#: ../src/math-buttons.c:201
+#: ../src/math-buttons.vala:370
 msgid "Real Component"
 msgstr "वास्तविक घटक"
 
 #. Tooltip for the imaginary component button
-#: ../src/math-buttons.c:204
+#: ../src/math-buttons.vala:372
 msgid "Imaginary Component"
 msgstr "काल्पनिक घटक"
 
 #. Tooltip for the ones' complement button
-#: ../src/math-buttons.c:207
+#: ../src/math-buttons.vala:374
 msgid "Ones' Complement"
 msgstr "एक का पूरक"
 
 #. Tooltip for the two's complement button
-#: ../src/math-buttons.c:210
+#: ../src/math-buttons.vala:376
 msgid "Two's Complement"
 msgstr "दो का पूरक"
 
 #. Tooltip for the truncate button
-#: ../src/math-buttons.c:213
+#: ../src/math-buttons.vala:378
 msgid "Truncate"
 msgstr "छोटा करें"
 
 #. Tooltip for the start group button
-#: ../src/math-buttons.c:216
+#: ../src/math-buttons.vala:380
 msgid "Start Group [(]"
 msgstr "समूह आरंभ करें [(]"
 
 #. Tooltip for the end group button
-#: ../src/math-buttons.c:219
+#: ../src/math-buttons.vala:382
 msgid "End Group [)]"
 msgstr "समूह समाप्त करें [)]"
 
 #. Tooltip for the solve button
-#: ../src/math-buttons.c:228
+#: ../src/math-buttons.vala:388
 msgid "Calculate Result"
 msgstr "परिणाम गणना"
 
 #. Tooltip for the factor button
-#: ../src/math-buttons.c:231
+#: ../src/math-buttons.vala:390
 msgid "Factorize [Ctrl+F]"
 msgstr "फैक्टोराइज [Ctrl+F]"
 
 #. Tooltip for the clear button
-#: ../src/math-buttons.c:234
+#: ../src/math-buttons.vala:392
 msgid "Clear Display [Escape]"
 msgstr "प्रदर्शन साफ करें [Escape]"
 
 #. Tooltip for the undo button
-#: ../src/math-buttons.c:237
+#: ../src/math-buttons.vala:394
 msgid "Undo [Ctrl+Z]"
 msgstr "पहले जैसा [Ctrl+Z]"
 
 #. Tooltip for the double declining depreciation button
-#: ../src/math-buttons.c:249
+#: ../src/math-buttons.vala:402
 msgid "Double Declining Depreciation"
 msgstr "दोहरी घटती कमी"
 
 #. Tooltip for the financial term button
-#: ../src/math-buttons.c:255
+#: ../src/math-buttons.vala:406
 msgid "Financial Term"
 msgstr "वित्तीय पद"
 
 #. Tooltip for the sum of the years digits depreciation button
-#: ../src/math-buttons.c:258
+#: ../src/math-buttons.vala:408
 msgid "Sum of the Years Digits Depreciation"
 msgstr "साल के अंक कमी का जोड़"
 
 #. Tooltip for the straight line depreciation button
-#: ../src/math-buttons.c:261
+#: ../src/math-buttons.vala:410
 msgid "Straight Line Depreciation"
 msgstr "सीधी पंक्ति कमी"
 
 #. Number display mode combo: Binary, e.g. 10011010010₂
-#: ../src/math-buttons.c:601
+#: ../src/math-buttons.vala:523
 msgid "Binary"
 msgstr "द्विचर"
 
 #. Number display mode combo: Octal, e.g. 2322₈
-#: ../src/math-buttons.c:605
+#: ../src/math-buttons.vala:527
 msgid "Octal"
 msgstr "ओक्टल"
 
 #. Number display mode combo: Decimal, e.g. 1234
-#: ../src/math-buttons.c:609
+#: ../src/math-buttons.vala:531
 msgid "Decimal"
 msgstr "दशांश"
 
 #. Number display mode combo: Hexadecimal, e.g. 4D2₁₆
-#: ../src/math-buttons.c:613
+#: ../src/math-buttons.vala:535
 msgid "Hexadecimal"
 msgstr "हेक्साडेसीमल"
 
 #. Left Shift Popup: Menu item to shift left by n places (n < 10)
 #. Right Shift Popup: Menu item to shift right by n places (n < 10)
-#: ../src/math-buttons.c:894 ../src/math-buttons.c:937
+#: ../src/math-buttons.vala:740 ../src/math-buttons.vala:777
 #, c-format
 msgid "_%d place"
 msgid_plural "_%d places"
@@ -1268,7 +1223,7 @@ msgstr[1] "_%d स्थान"
 
 #. Left Shift Popup: Menu item to shift left by n places (n >= 10)
 #. Right Shift Popup: Menu item to shift right by n places (n >= 10)
-#: ../src/math-buttons.c:898 ../src/math-buttons.c:941
+#: ../src/math-buttons.vala:745 ../src/math-buttons.vala:782
 #, c-format
 msgid "%d place"
 msgid_plural "%d places"
@@ -1276,73 +1231,77 @@ msgstr[0] "%d स्थान"
 msgstr[1] "%d स्थान"
 
 #. Tooltip for the round button
-#: ../src/math-buttons.c:987
+#: ../src/math-buttons.vala:813
 msgid "Round"
 msgstr "गोल"
 
 #. Tooltip for the floor button
-#: ../src/math-buttons.c:989
+#: ../src/math-buttons.vala:815
 msgid "Floor"
 msgstr "फर्श"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:991
+#: ../src/math-buttons.vala:817
 msgid "Ceiling"
 msgstr "छत"
 
 #. Tooltip for the ceiling button
-#: ../src/math-buttons.c:993
+#: ../src/math-buttons.vala:819
 msgid "Sign"
 msgstr "हस्ताक्षर करें"
 
 #. Label that is displayed between the two conversion combo boxes, e.g. "[degrees] in [radians]"
-#: ../src/math-converter.c:412
+#: ../src/math-converter.vala:46
 msgid " in "
 msgstr " में "
 
 #. Tooltip for swap conversion button
-#: ../src/math-converter.c:427
+#: ../src/math-converter.vala:60
 msgid "Switch conversion units"
 msgstr "रूपांतरण इकाई बदलें"
 
+#. Digits localized for the given language
+#: ../src/math-equation.vala:169
+msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
+
 #. Error shown when trying to undo with no undo history
-#: ../src/math-equation.c:459
+#: ../src/math-equation.vala:480
 msgid "No undo history"
 msgstr "कोई वापस लेना इतिहास नहीं"
 
 #. Error shown when trying to redo with no redo history
-#: ../src/math-equation.c:486
+#: ../src/math-equation.vala:496
 msgid "No redo history"
 msgstr "वापस लेने का कोई इतिहास नहीं"
 
-#: ../src/math-equation.c:944
+#: ../src/math-equation.vala:725
 msgid "No sane value to store"
 msgstr "भंडारन के लिये कोई सेन मान नहीं"
 
 #. Error displayed to user when they perform a bitwise operation on numbers greater than the current word
-#: ../src/math-equation.c:1226
+#: ../src/math-equation.vala:873
 msgid "Overflow. Try a bigger word size"
 msgstr "अतिप्रवाह. किसी बड़े शब्द आकार आजमाएँ"
 
 #. Error displayed to user when they an unknown variable is entered
-#: ../src/math-equation.c:1231
+#: ../src/math-equation.vala:878
 #, c-format
 msgid "Unknown variable '%s'"
 msgstr "अज्ञात चर '%s'"
 
 #. Error displayed to user when an unknown function is entered
-#: ../src/math-equation.c:1236
+#: ../src/math-equation.vala:885
 #, c-format
 msgid "Function '%s' is not defined"
 msgstr "प्रकार्य '%s' परिभाषित नहीं"
 
 #. Error displayed to user when an conversion with unknown units is attempted
-#: ../src/math-equation.c:1241
+#: ../src/math-equation.vala:892
 msgid "Unknown conversion"
 msgstr "अज्ञात वार्तालाप"
 
-#. Uncategorized error. Show error token to user
-#: ../src/math-equation.c:1249
+#: ../src/math-equation.vala:900
 #, c-format
 #| msgid "Malformed expression"
 msgid "Malformed expression at token '%s'"
@@ -1350,914 +1309,824 @@ msgstr "टोकन '%s' पर विरूपित अभिव्यक्�
 
 #. Unknown error.
 #. Error displayed to user when they enter an invalid calculation
-#: ../src/math-equation.c:1252 ../src/math-equation.c:1257
+#: ../src/math-equation.vala:905 ../src/math-equation.vala:910
 msgid "Malformed expression"
 msgstr "विरूपित अभिव्यक्ति"
 
-#: ../src/math-equation.c:1271
+#: ../src/math-equation.vala:921
 msgid "Calculating"
 msgstr "गणना कर रहा है"
 
 #. Error displayed when trying to factorize a non-integer value
-#: ../src/math-equation.c:1387
+#: ../src/math-equation.vala:1048
 msgid "Need an integer to factorize"
 msgstr "फैक्टराइज करने के लिए किसी पूर्णांक की जरूरत"
 
-#. This message is displayed in the status bar when a bit
-#. shift operation is performed and the display does not contain a number
-#: ../src/math-equation.c:1459
+#. This message is displayed in the status bar when a bit shift operation is performed and the display does not contain a number
+#: ../src/math-equation.vala:1102
 msgid "No sane value to bitwise shift"
 msgstr "बिटवाइज शिफ्ट के लिये कोई सेन मान नहीं"
 
 #. Message displayed when cannot toggle bit in display
-#: ../src/math-equation.c:1490
+#: ../src/math-equation.vala:1116
 msgid "Displayed value not an integer"
 msgstr "दिखाया गया मान पूर्णांक नहीं"
 
-#. Digits localized for the given language
-#: ../src/math-equation.c:1915
-msgid "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
-msgstr "0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F"
-
 #. Label on close button in preferences dialog
-#: ../src/math-preferences.c:235
+#: ../src/math-preferences.vala:29
 msgid "_Close"
 msgstr "बंद करें (_C)"
 
-#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
-#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
-#: ../src/math-preferences.c:245 ../src/unit-manager.c:54
-msgid "Degrees"
-msgstr "डिग्री"
-
-#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
-#: ../src/math-preferences.c:249 ../src/unit-manager.c:55
-msgid "Radians"
-msgstr "रेडियन"
-
-#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
-#: ../src/math-preferences.c:253 ../src/unit-manager.c:56
-msgid "Gradians"
-msgstr "ग्रेडियन"
+#. Preferences dialog: Label for number format combo box
+#: ../src/math-preferences.vala:39
+msgid "Number _Format:"
+msgstr "संख्या प्रारूप (_F):"
 
 #. Number display mode combo: Automatic, e.g. 1234 (or scientific for large number 1.234×10^99)
-#: ../src/math-preferences.c:263
+#: ../src/math-preferences.vala:56
 msgid "Automatic"
 msgstr "स्वचालित"
 
 #. Number display mode combo: Fixed, e.g. 1234
-#: ../src/math-preferences.c:267
+#: ../src/math-preferences.vala:60
 msgid "Fixed"
 msgstr "स्थिर"
 
 #. Number display mode combo: Scientific, e.g. 1.234×10^3
-#: ../src/math-preferences.c:271
+#: ../src/math-preferences.vala:64
 msgid "Scientific"
 msgstr "वैज्ञानिक"
 
 #. Number display mode combo: Engineering, e.g. 1.234k
-#: ../src/math-preferences.c:275
+#: ../src/math-preferences.vala:68
 msgid "Engineering"
 msgstr "इंजीनियरिंग"
 
 #. Label used in preferences dialog.  The %d is replaced by a spinbutton
-#: ../src/math-preferences.c:286
+#: ../src/math-preferences.vala:88
 #, c-format
 msgid "Show %d decimal _places"
 msgstr "%d दशमलव स्थान तक दिखाएँ (_p)"
 
-#. Translators: Error displayed when boolean AND attempted on non-integer values
-#: ../src/mp-binary.c:115
-msgid "Boolean AND is only defined for positive integers"
-msgstr "बुलियन AND केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+#. Preferences dialog: label for show trailing zeroes check button
+#: ../src/math-preferences.vala:115
+msgid "Show trailing _zeroes"
+msgstr "अंत मे अतिरिक्त शून्य दिखाएँ (_z)"
 
-#. Translators: Error displayed when boolean OR attempted on non-integer values
-#: ../src/mp-binary.c:128
-msgid "Boolean OR is only defined for positive integers"
-msgstr "बुलियन OR केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+#. Preferences dialog: label for show show thousands separator check button
+#: ../src/math-preferences.vala:121
+msgid "Show _thousands separators"
+msgstr "हजार विभाजक दिखाएँ (_t)"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
-#: ../src/mp-binary.c:141
-msgid "Boolean XOR is only defined for positive integers"
-msgstr "बुलियन XOR केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+#. Preferences dialog: Label for angle unit combo box
+#: ../src/math-preferences.vala:127
+msgid "_Angle units:"
+msgstr "कोण इकाई (_A):"
 
-#. Translators: Error displayed when boolean XOR attempted on non-integer values
-#: ../src/mp-binary.c:156
-msgid "Boolean NOT is only defined for positive integers"
-msgstr "बुलियन NOT केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+#. Preferences dialog: Angle unit combo box: Use degrees for trigonometric calculations
+#. FIXME: Approximations of 1/(units in a circle), therefore, 360 deg != 400 grads
+#: ../src/math-preferences.vala:143 ../src/unit.vala:38
+msgid "Degrees"
+msgstr "डिग्री"
 
-#. Translators: Error displayed when bit shift attempted on non-integer values
-#: ../src/mp-binary.c:187
-msgid "Shift is only possible on integer values"
-msgstr "पूर्णांक मानों पर केवल शिफ्ट संभव है"
+#. Preferences dialog: Angle unit combo box: Use radians for trigonometric calculations
+#: ../src/math-preferences.vala:147 ../src/unit.vala:39
+msgid "Radians"
+msgstr "रेडियन"
+
+#. Preferences dialog: Angle unit combo box: Use gradians for trigonometric calculations
+#: ../src/math-preferences.vala:151 ../src/unit.vala:40
+msgid "Gradians"
+msgstr "ग्रेडियन"
+
+#. Preferences dialog: Label for word size combo box
+#: ../src/math-preferences.vala:157
+msgid "Word _size:"
+msgstr "शब्द आकार (_s):"
+
+#. Word size combo: 8 bits
+#: ../src/math-preferences.vala:171
+msgid "8 bits"
+msgstr "8 बिट्स"
+
+#. Word size combo: 16 bits
+#: ../src/math-preferences.vala:173
+msgid "16 bits"
+msgstr "16 बिट्स"
+
+#. Word size combo: 32 bits
+#: ../src/math-preferences.vala:175
+msgid "32 bits"
+msgstr "32 बिट्स"
+
+#. Word size combo: 64 bits
+#: ../src/math-preferences.vala:177
+msgid "64 bits"
+msgstr "6 बिट्स"
 
 #. Translators: Error display when attempting to take argument of zero
-#: ../src/mp.c:148
+#: ../src/number.vala:652
 msgid "Argument not defined for zero"
 msgstr "शून्य के लिए तर्क परिभाषित नहीं है"
 
-#: ../src/mp.c:299
-msgid "Overflow: the result couldn't be calculated"
-msgstr "आधिक्य: परिणाम की गणना नहीं की जा सकती है"
-
-#. Translators: Error displayed attempted to divide by zero
-#: ../src/mp.c:644 ../src/mp.c:676 ../src/mp.c:1605
-msgid "Division by zero is undefined"
-msgstr "शून्य से भाग अपरिभाषित है"
-
-#. Translators: Error displayed when attempting to take logarithm of zero
-#: ../src/mp.c:1276 ../src/mp.c:1313
-msgid "Logarithm of zero is undefined"
-msgstr "शून्य का लघुगुणक अपरिभाषित है"
-
-#. Translators: Error displayed when attempted to raise 0 to a negative exponent
-#: ../src/mp.c:1680 ../src/mp.c:1994
+#. Translators: Error displayed when attempted to raise 0 to a negative re_exponent
+#: ../src/number.vala:909 ../src/number.vala:1858
 msgid "The power of zero is undefined for a negative exponent"
 msgstr "नकारात्मक घातांक के लिए शून्य का घात अपरिभाषित है"
 
-#: ../src/mp.c:1704
-msgid "Reciprocal of zero is undefined"
-msgstr "शून्य का उल्टा अपरिभाषित है"
-
-#: ../src/mp.c:1789
-msgid "Root must be non-zero"
-msgstr "रूट को जरूर गैर शून्य होना चाहिए"
-
-#: ../src/mp.c:1807
-msgid "Negative root of zero is undefined"
-msgstr "शून्य का ऋणात्मक रूट अपरिभाषित है"
-
-#: ../src/mp.c:1813
-msgid "nth root of negative number is undefined for even n"
-msgstr "ऋणात्मक संख्या का nth रूट समय n के लिए अपरिभाषित है"
+#. Translators: Error displayed when attempting to take logarithm of zero
+#: ../src/number.vala:992 ../src/number.vala:1025
+msgid "Logarithm of zero is undefined"
+msgstr "शून्य का लघुगुणक अपरिभाषित है"
 
 #. Translators: Error displayed when attempted take the factorial of a fractional number
-#: ../src/mp.c:1934
+#: ../src/number.vala:1043
 msgid "Factorial is only defined for natural numbers"
 msgstr "फैक्टोरियल केवल प्राकृतिक संख्या के लिए परिभाषित है"
 
+#. Translators: Error displayed attempted to divide by zero
+#: ../src/number.vala:1119 ../src/number.vala:2608
+msgid "Division by zero is undefined"
+msgstr "शून्य से भाग अपरिभाषित है"
+
 #. Translators: Error displayed when attemping to do a modulus division on non-integer numbers
-#: ../src/mp.c:1954
+#: ../src/number.vala:1159
 msgid "Modulus division is only defined for integers"
 msgstr "मॉड्यूलस डिविजन केवल पूर्णांकों के लिए परिभाषित है"
 
 #. Translators: Error displayed when tangent value is undefined
-#: ../src/mp-trigonometric.c:310
+#: ../src/number.vala:1227
 msgid ""
 "Tangent is undefined for angles that are multiples of π (180°) from π∕2 (90°)"
 msgstr ""
 "टैनजेंट उन कोणों के लिए अपरिभाषित है जो π (180°) से π∕2 (90°) के बीच गुणक हैं"
 
 #. Translators: Error displayed when inverse sine value is undefined
-#: ../src/mp-trigonometric.c:355
+#: ../src/number.vala:1265
 msgid "Inverse sine is undefined for values outside [-1, 1]"
 msgstr "विभिन्न साइनों [-1, 1] के लिए अपरिभाषित है"
 
 #. Translators: Error displayed when inverse cosine value is undefined
-#: ../src/mp-trigonometric.c:372
+#: ../src/number.vala:1280
 msgid "Inverse cosine is undefined for values outside [-1, 1]"
 msgstr "विलोम कोसाइन [-1, 1] के लिए अपरिभाषित है"
 
 #. Translators: Error displayed when inverse hyperbolic cosine value is undefined
-#: ../src/mp-trigonometric.c:591
+#: ../src/number.vala:1477
 msgid "Inverse hyperbolic cosine is undefined for values less than one"
 msgstr "उल्टा हाइपरबोलिक कोसाइन अपरिभाषित है जो इससे कम है"
 
 #. Translators: Error displayed when inverse hyperbolic tangent value is undefined
-#: ../src/mp-trigonometric.c:615
+#: ../src/number.vala:1496
 msgid "Inverse hyperbolic tangent is undefined for values outside [-1, 1]"
 msgstr "विलोम हाइपरबोलिक टैंजेट बाहरी मान के लिए [-1, 1] अपरिभाषित है"
 
-#: ../src/unit-manager.c:54
-#, c-format
-msgctxt "unit-format"
-msgid "%s degrees"
-msgstr "%s डिग्री"
-
-#: ../src/unit-manager.c:54
-msgctxt "unit-symbols"
-msgid "degree,degrees,deg"
-msgstr "डिग्री, डिग्रीज, डिग्री"
-
-#: ../src/unit-manager.c:55
-#, c-format
-msgctxt "unit-format"
-msgid "%s radians"
-msgstr "%s रेडियन"
-
-#: ../src/unit-manager.c:55
-msgctxt "unit-symbols"
-msgid "radian,radians,rad"
-msgstr "रेडियन, रेडियन्स, रेड"
-
-#: ../src/unit-manager.c:56
-#, c-format
-msgctxt "unit-format"
-msgid "%s gradians"
-msgstr "%s ग्रेडियन्स"
-
-#: ../src/unit-manager.c:56
-msgctxt "unit-symbols"
-msgid "gradian,gradians,grad"
-msgstr "ग्रेडियन, ग्रेडियन्स, ग्रैड"
-
-#: ../src/unit-manager.c:57
-msgid "Parsecs"
-msgstr "पारसेक"
-
-#: ../src/unit-manager.c:57
-#, c-format
-msgctxt "unit-format"
-msgid "%s pc"
-msgstr "%s pc"
-
-#: ../src/unit-manager.c:57
-msgctxt "unit-symbols"
-msgid "parsec,parsecs,pc"
-msgstr "parsec,parsecs,pc"
-
-#: ../src/unit-manager.c:58
-msgid "Light Years"
-msgstr "प्रकाश वर्ष"
-
-#: ../src/unit-manager.c:58
-#, c-format
-msgctxt "unit-format"
-msgid "%s ly"
-msgstr "%s ly"
-
-#: ../src/unit-manager.c:58
-msgctxt "unit-symbols"
-msgid "lightyear,lightyears,ly"
-msgstr "lightyear,lightyears,ly"
-
-#: ../src/unit-manager.c:59
-msgid "Astronomical Units"
-msgstr "ब्रह्मांडीय इकाई"
-
-#: ../src/unit-manager.c:59
-#, c-format
-msgctxt "unit-format"
-msgid "%s au"
-msgstr "%s au"
-
-#: ../src/unit-manager.c:59
-msgctxt "unit-symbols"
-msgid "au"
-msgstr "au"
-
-#: ../src/unit-manager.c:60
-msgid "Nautical Miles"
-msgstr "नॉटिकल मील"
-
-#: ../src/unit-manager.c:60
-#, c-format
-msgctxt "unit-format"
-msgid "%s nmi"
-msgstr "%s nmi"
-
-#: ../src/unit-manager.c:60
-msgctxt "unit-symbols"
-msgid "nmi"
-msgstr "nmi"
-
-#: ../src/unit-manager.c:61
-msgid "Miles"
-msgstr "मील"
-
-#: ../src/unit-manager.c:61
-#, c-format
-msgctxt "unit-format"
-msgid "%s mi"
-msgstr "%s mi"
-
-#: ../src/unit-manager.c:61
-msgctxt "unit-symbols"
-msgid "mile,miles,mi"
-msgstr "मील,मील,mi"
-
-#: ../src/unit-manager.c:62
-msgid "Kilometers"
-msgstr "किलोमीटर"
-
-#: ../src/unit-manager.c:62
-#, c-format
-msgctxt "unit-format"
-msgid "%s km"
-msgstr "%s किमी"
-
-#: ../src/unit-manager.c:62
-msgctxt "unit-symbols"
-msgid "kilometer,kilometers,km,kms"
-msgstr "किलोमीटर, किलोमीटर, किमी, किलोमीटर"
-
-#: ../src/unit-manager.c:63
-msgid "Cables"
-msgstr "केबल"
-
-#: ../src/unit-manager.c:63
-#, c-format
-msgctxt "unit-format"
-msgid "%s cb"
-msgstr "%s cb"
-
-#: ../src/unit-manager.c:63
-msgctxt "unit-symbols"
-msgid "cable,cables,cb"
-msgstr "केबल, केबल्स, सीबी"
-
-#: ../src/unit-manager.c:64
-msgid "Fathoms"
-msgstr "फैदम"
-
-#: ../src/unit-manager.c:64
-#, c-format
-msgctxt "unit-format"
-msgid "%s ftm"
-msgstr "%s ftm"
-
-#: ../src/unit-manager.c:64
-msgctxt "unit-symbols"
-msgid "fathom,fathoms,ftm"
-msgstr "फैदम, फैदम्स, ftm"
-
-#: ../src/unit-manager.c:65
-msgid "Meters"
-msgstr "मीटर"
-
-#: ../src/unit-manager.c:65
-#, c-format
-msgctxt "unit-format"
-msgid "%s m"
-msgstr "%s मी"
-
-#: ../src/unit-manager.c:65
-msgctxt "unit-symbols"
-msgid "meter,meters,m"
-msgstr "मीटर, मीटर्स, मी"
-
-#: ../src/unit-manager.c:66
-msgid "Yards"
-msgstr "गज"
-
-#: ../src/unit-manager.c:66
-#, c-format
-msgctxt "unit-format"
-msgid "%s yd"
-msgstr "%s yd"
-
-#: ../src/unit-manager.c:66
-msgctxt "unit-symbols"
-msgid "yard,yards,yd"
-msgstr "गज, गज, गज"
-
-#: ../src/unit-manager.c:67
-msgid "Feet"
-msgstr "फीट"
-
-#: ../src/unit-manager.c:67
-#, c-format
-msgctxt "unit-format"
-msgid "%s ft"
-msgstr "%s फीट"
-
-#: ../src/unit-manager.c:67
-msgctxt "unit-symbols"
-msgid "foot,feet,ft"
-msgstr "फुट, फीट, ft"
-
-#: ../src/unit-manager.c:68
-msgid "Inches"
-msgstr "इंचेस"
-
-#: ../src/unit-manager.c:68
-#, c-format
-msgctxt "unit-format"
-msgid "%s in"
-msgstr "%s in"
-
-#: ../src/unit-manager.c:68
-msgctxt "unit-symbols"
-msgid "inch,inches,in"
-msgstr "इंच,इंच,in"
-
-#: ../src/unit-manager.c:69
-msgid "Centimeters"
-msgstr "सेन्टीमीटर"
-
-#: ../src/unit-manager.c:69
-#, c-format
-msgctxt "unit-format"
-msgid "%s cm"
-msgstr "%s cm"
-
-#: ../src/unit-manager.c:69
-msgctxt "unit-symbols"
-msgid "centimeter,centimeters,cm,cms"
-msgstr "सेंटीमीटर, सेंटीमीटर, सीएम, सीएमएस"
-
-#: ../src/unit-manager.c:70
-msgid "Millimeters"
-msgstr "मिलीमीटर्स"
-
-#: ../src/unit-manager.c:70
-#, c-format
-msgctxt "unit-format"
-msgid "%s mm"
-msgstr "%s मिमी"
-
-#: ../src/unit-manager.c:70
-msgctxt "unit-symbols"
-msgid "millimeter,millimeters,mm"
-msgstr "मिलीमीटर , मिलीमीटर, मिमी"
-
-#: ../src/unit-manager.c:71
-msgid "Micrometers"
-msgstr "माइक्रोमीटर"
-
-#: ../src/unit-manager.c:71
-#, c-format
-msgctxt "unit-format"
-msgid "%s μm"
-msgstr "%s μm"
-
-#: ../src/unit-manager.c:71
-msgctxt "unit-symbols"
-msgid "micrometer,micrometers,um"
-msgstr "माइक्रोमीटर, माइक्रोमीटर, um"
-
-#: ../src/unit-manager.c:72
-msgid "Nanometers"
-msgstr "नैनोमीटर"
-
-#: ../src/unit-manager.c:72
-#, c-format
-msgctxt "unit-format"
-msgid "%s nm"
-msgstr "%s nm"
-
-#: ../src/unit-manager.c:72
-msgctxt "unit-symbols"
-msgid "nanometer,nanometers,nm"
-msgstr "नैनोमीटर, नैनोमीटर, nm"
-
-#: ../src/unit-manager.c:73
-msgid "Hectares"
-msgstr "हेक्टामीटर"
-
-#: ../src/unit-manager.c:73
-#, c-format
-msgctxt "unit-format"
-msgid "%s ha"
-msgstr "%s ha"
-
-#: ../src/unit-manager.c:73
-msgctxt "unit-symbols"
-msgid "hectare,hectares,ha"
-msgstr "हेक्टेयर, हेक्टेयर, ha"
-
-#: ../src/unit-manager.c:74
-msgid "Acres"
-msgstr "एकड़"
-
-#: ../src/unit-manager.c:74
-#, c-format
-msgctxt "unit-format"
-msgid "%s acres"
-msgstr "%s एकड़"
-
-#: ../src/unit-manager.c:74
-msgctxt "unit-symbols"
-msgid "acre,acres"
-msgstr "एकड़,एकड़"
-
-#: ../src/unit-manager.c:75
-msgid "Square Meters"
-msgstr "वर्ग मीटर"
-
-#: ../src/unit-manager.c:75
-#, c-format
-msgctxt "unit-format"
-msgid "%s m²"
-msgstr "%s m²"
-
-#: ../src/unit-manager.c:75
-msgctxt "unit-symbols"
-msgid "m²"
-msgstr "m²"
-
-#: ../src/unit-manager.c:76
-msgid "Square Centimeters"
-msgstr "वर्ग सेन्टीमीटर"
-
-#: ../src/unit-manager.c:76
-#, c-format
-msgctxt "unit-format"
-msgid "%s cm²"
-msgstr "%s cm²"
-
-#: ../src/unit-manager.c:76
-msgctxt "unit-symbols"
-msgid "cm²"
-msgstr "cm²"
-
-#: ../src/unit-manager.c:77
-msgid "Square Millimeters"
-msgstr "वर्ग मिलीमीटर "
-
-#: ../src/unit-manager.c:77
-#, c-format
-msgctxt "unit-format"
-msgid "%s mm²"
-msgstr "%s mm²"
-
-#: ../src/unit-manager.c:77
-msgctxt "unit-symbols"
-msgid "mm²"
-msgstr "mm²"
-
-#: ../src/unit-manager.c:78
-msgid "Cubic Meters"
-msgstr "घन मीटर"
-
-#: ../src/unit-manager.c:78
-#, c-format
-msgctxt "unit-format"
-msgid "%s m³"
-msgstr "%s m³"
-
-#: ../src/unit-manager.c:78
-msgctxt "unit-symbols"
-msgid "m³"
-msgstr "m³"
-
-#: ../src/unit-manager.c:79
-msgid "Gallons"
-msgstr "गैलन"
-
-#: ../src/unit-manager.c:79
-#, c-format
-msgctxt "unit-format"
-msgid "%s gal"
-msgstr "%s gal"
-
-#: ../src/unit-manager.c:79
-msgctxt "unit-symbols"
-msgid "gallon,gallons,gal"
-msgstr "गैलन, गैलन, गैल"
-
-#: ../src/unit-manager.c:80
-msgid "Litres"
-msgstr "लीटर"
-
-#: ../src/unit-manager.c:80
-#, c-format
-msgctxt "unit-format"
-msgid "%s L"
-msgstr "%s L"
-
-#: ../src/unit-manager.c:80
-msgctxt "unit-symbols"
-msgid "litre,litres,liter,liters,L"
-msgstr "लीटर, लीटर्स, लीटर, लीटर्स, L"
-
-#: ../src/unit-manager.c:81
-msgid "Quarts"
-msgstr "क्वार्ट्स"
-
-#: ../src/unit-manager.c:81
-#, c-format
-msgctxt "unit-format"
-msgid "%s qt"
-msgstr "%s qt"
-
-#: ../src/unit-manager.c:81
-msgctxt "unit-symbols"
-msgid "quart,quarts,qt"
-msgstr "क्वार्ट, क्वार्ट्स, qt"
-
-#: ../src/unit-manager.c:82
-msgid "Pints"
-msgstr "पिंट्स"
-
-#: ../src/unit-manager.c:82
-#, c-format
-msgctxt "unit-format"
-msgid "%s pt"
-msgstr "%s pt"
-
-#: ../src/unit-manager.c:82
-msgctxt "unit-symbols"
-msgid "pint,pints,pt"
-msgstr "pint,pints,pt"
-
-#: ../src/unit-manager.c:83
-msgid "Millilitres"
-msgstr "मिलीलीटर"
-
-#: ../src/unit-manager.c:83
-#, c-format
-msgctxt "unit-format"
-msgid "%s mL"
-msgstr "%s mL"
-
-#: ../src/unit-manager.c:83
-msgctxt "unit-symbols"
-msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
-msgstr "मिलीलीटर, मिलीलीटर, मिलीलीटर,मिलीलीटर, mL,cm³"
-
-#: ../src/unit-manager.c:84
-msgid "Microlitres"
-msgstr "माइक्रोलीटर"
-
-#: ../src/unit-manager.c:84
-#, c-format
-msgctxt "unit-format"
-msgid "%s μL"
-msgstr "%s μL"
-
-#: ../src/unit-manager.c:84
-msgctxt "unit-symbols"
-msgid "mm³,μL,uL"
-msgstr "mm³,μL,uL"
-
-#: ../src/unit-manager.c:85
-msgid "Tonnes"
-msgstr "टन"
-
-#: ../src/unit-manager.c:85
-#, c-format
-msgctxt "unit-format"
-msgid "%s T"
-msgstr "%s T"
-
-#: ../src/unit-manager.c:85
-msgctxt "unit-symbols"
-msgid "tonne,tonnes"
-msgstr "टन, टन"
-
-#: ../src/unit-manager.c:86
-msgid "Kilograms"
-msgstr "किलोग्राम"
-
-#: ../src/unit-manager.c:86
-#, c-format
-msgctxt "unit-format"
-msgid "%s kg"
-msgstr "%s किग्रा"
-
-#: ../src/unit-manager.c:86
-msgctxt "unit-symbols"
-msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
-msgstr "किलोग्राम, किलोग्राम, किलोग्राम,किलोग्राम, किलोग्राम, किग्रा, किग्रा"
-
-#: ../src/unit-manager.c:87
-msgid "Pounds"
-msgstr "पाउंड"
-
-#: ../src/unit-manager.c:87
-#, c-format
-msgctxt "unit-format"
-msgid "%s lb"
-msgstr "%s lb"
-
-#: ../src/unit-manager.c:87
-msgctxt "unit-symbols"
-msgid "pound,pounds,lb"
-msgstr "पाउंड, पाउंड, lb"
-
-#: ../src/unit-manager.c:88
-msgid "Ounces"
-msgstr "औंस"
-
-#: ../src/unit-manager.c:88
-#, c-format
-msgctxt "unit-format"
-msgid "%s oz"
-msgstr "%s oz"
-
-#: ../src/unit-manager.c:88
-msgctxt "unit-symbols"
-msgid "ounce,ounces,oz"
-msgstr "औंस, औंस, oz"
-
-#: ../src/unit-manager.c:89
-msgid "Grams"
-msgstr "ग्राम"
-
-#: ../src/unit-manager.c:89
-#, c-format
-msgctxt "unit-format"
-msgid "%s g"
-msgstr "%s g"
-
-#: ../src/unit-manager.c:89
-msgctxt "unit-symbols"
-msgid "gram,grams,gramme,grammes,g"
-msgstr "ग्राम, ग्राम, ग्राम, ग्राम, g"
-
-#: ../src/unit-manager.c:90
-msgid "Years"
-msgstr "वर्ष"
-
-#: ../src/unit-manager.c:90
-#, c-format
-msgctxt "unit-format"
-msgid "%s years"
-msgstr "%s वर्ष"
-
-#: ../src/unit-manager.c:90
-msgctxt "unit-symbols"
-msgid "year,years"
-msgstr "वर्ष, वर्ष"
-
-#: ../src/unit-manager.c:91
-msgid "Days"
-msgstr "दिन"
-
-#: ../src/unit-manager.c:91
-#, c-format
-msgctxt "unit-format"
-msgid "%s days"
-msgstr "%s दिन"
-
-#: ../src/unit-manager.c:91
-msgctxt "unit-symbols"
-msgid "day,days"
-msgstr "दिन, दिन"
-
-#: ../src/unit-manager.c:92
-msgid "Hours"
-msgstr "घंटे"
-
-#: ../src/unit-manager.c:92
-#, c-format
-msgctxt "unit-format"
-msgid "%s hours"
-msgstr "%s घंटे"
-
-#: ../src/unit-manager.c:92
-msgctxt "unit-symbols"
-msgid "hour,hours"
-msgstr "घंटे, घंटे भर"
-
-#: ../src/unit-manager.c:93
-msgid "Minutes"
-msgstr "मिनट"
-
-#: ../src/unit-manager.c:93
-#, c-format
-msgctxt "unit-format"
-msgid "%s minutes"
-msgstr "%s मिनट"
-
-#: ../src/unit-manager.c:93
-msgctxt "unit-symbols"
-msgid "minute,minutes"
-msgstr "मिनट, मिनट"
-
-#: ../src/unit-manager.c:94
-msgid "Seconds"
-msgstr "सेकेंड"
-
-#: ../src/unit-manager.c:94
-#, c-format
-msgctxt "unit-format"
-msgid "%s s"
-msgstr "%s s"
-
-#: ../src/unit-manager.c:94
-msgctxt "unit-symbols"
-msgid "second,seconds,s"
-msgstr "सेंकेंड, सेंकेंड, से"
-
-#: ../src/unit-manager.c:95
-msgid "Milliseconds"
-msgstr "मिलीसेंकेंड"
-
-#: ../src/unit-manager.c:95
-#, c-format
-msgctxt "unit-format"
-msgid "%s ms"
-msgstr "%s ms"
-
-#: ../src/unit-manager.c:95
-msgctxt "unit-symbols"
-msgid "millisecond,milliseconds,ms"
-msgstr "मिलीसेंकेंड, मिलीसेंकेंड, मिलीसे."
-
-#: ../src/unit-manager.c:96
-msgid "Microseconds"
-msgstr "माइक्रोसेंकेंड"
-
-#: ../src/unit-manager.c:96
-#, c-format
-msgctxt "unit-format"
-msgid "%s μs"
-msgstr "%s μs"
-
-#: ../src/unit-manager.c:96
-msgctxt "unit-symbols"
-msgid "microsecond,microseconds,us,μs"
-msgstr "माइक्रोसेंकेंड, माइक्रोसेंकेंड, us,μs"
-
-#: ../src/unit-manager.c:97
-msgid "Celsius"
-msgstr "सेल्सियस"
-
-#: ../src/unit-manager.c:97
-#, c-format
-msgctxt "unit-format"
-msgid "%s ˚C"
-msgstr "%s ˚C"
-
-#: ../src/unit-manager.c:97
-msgctxt "unit-symbols"
-msgid "degC,˚C"
-msgstr "degC,˚C"
-
-#: ../src/unit-manager.c:98
-msgid "Farenheit"
-msgstr "फारेनहाइट"
-
-#: ../src/unit-manager.c:98
-#, c-format
-msgctxt "unit-format"
-msgid "%s ˚F"
-msgstr "%s ˚F"
-
-#: ../src/unit-manager.c:98
-msgctxt "unit-symbols"
-msgid "degF,˚F"
-msgstr "degF,˚F"
-
-#: ../src/unit-manager.c:99
-msgid "Kelvin"
-msgstr "केल्विन"
-
-#: ../src/unit-manager.c:99
-#, c-format
-msgctxt "unit-format"
-msgid "%s K"
-msgstr "%s K"
-
-#: ../src/unit-manager.c:99
-msgctxt "unit-symbols"
-msgid "K"
-msgstr "के"
-
-#: ../src/unit-manager.c:100
-msgid "Rankine"
-msgstr "Rankine"
-
-#: ../src/unit-manager.c:100
-#, c-format
-msgctxt "unit-format"
-msgid "%s ˚R"
-msgstr "%s ˚R"
-
-#: ../src/unit-manager.c:100
-msgctxt "unit-symbols"
-msgid "degR,˚R,˚Ra"
-msgstr "degR,˚R,˚Ra"
-
-#: ../src/unit-manager.c:109
+#. Translators: Error displayed when boolean AND attempted on non-integer values
+#: ../src/number.vala:1515
+msgid "Boolean AND is only defined for positive integers"
+msgstr "बुलियन AND केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+
+#. Translators: Error displayed when boolean OR attempted on non-integer values
+#: ../src/number.vala:1527
+msgid "Boolean OR is only defined for positive integers"
+msgstr "बुलियन OR केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/number.vala:1539
+msgid "Boolean XOR is only defined for positive integers"
+msgstr "बुलियन XOR केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+
+#. Translators: Error displayed when boolean XOR attempted on non-integer values
+#: ../src/number.vala:1551
+msgid "Boolean NOT is only defined for positive integers"
+msgstr "बुलियन NOT केवल धनात्मक पूर्णांक के लिए परिभाषित है"
+
+#. Translators: Error displayed when bit shift attempted on non-integer values
+#: ../src/number.vala:1574
+msgid "Shift is only possible on integer values"
+msgstr "पूर्णांक मानों पर केवल शिफ्ट संभव है"
+
+#: ../src/number.vala:1878
+msgid "Root must be non-zero"
+msgstr "रूट को जरूर गैर शून्य होना चाहिए"
+
+#: ../src/number.vala:1895
+msgid "Negative root of zero is undefined"
+msgstr "शून्य का ऋणात्मक रूट अपरिभाषित है"
+
+#: ../src/number.vala:1902
+msgid "nth root of negative number is undefined for even n"
+msgstr "ऋणात्मक संख्या का nth रूट समय n के लिए अपरिभाषित है"
+
+#: ../src/number.vala:2225
+msgid "Overflow: the result couldn't be calculated"
+msgstr "आधिक्य: परिणाम की गणना नहीं की जा सकती है"
+
+#: ../src/number.vala:2553
+msgid "Reciprocal of zero is undefined"
+msgstr "शून्य का उल्टा अपरिभाषित है"
+
+#: ../src/unit.vala:29
 msgid "Angle"
 msgstr "कोण"
 
-#: ../src/unit-manager.c:110
+#: ../src/unit.vala:30
 msgid "Length"
 msgstr "लंबाई"
 
-#: ../src/unit-manager.c:111
+#: ../src/unit.vala:31
 msgid "Area"
 msgstr "क्षेत्र"
 
-#: ../src/unit-manager.c:112
+#: ../src/unit.vala:32
 msgid "Volume"
 msgstr "आवाज़"
 
-#: ../src/unit-manager.c:113
+#: ../src/unit.vala:33
 msgid "Weight"
 msgstr "भार"
 
-#: ../src/unit-manager.c:114
+#: ../src/unit.vala:34
 msgid "Duration"
 msgstr "अवधि"
 
-#: ../src/unit-manager.c:115
+#: ../src/unit.vala:35
 msgid "Temperature"
 msgstr "तापक्रम"
 
-#: ../src/unit-manager.c:127
+#: ../src/unit.vala:41
+msgid "Parsecs"
+msgstr "पारसेक"
+
+#: ../src/unit.vala:42
+msgid "Light Years"
+msgstr "प्रकाश वर्ष"
+
+#: ../src/unit.vala:43
+msgid "Astronomical Units"
+msgstr "ब्रह्मांडीय इकाई"
+
+#: ../src/unit.vala:44
+msgid "Nautical Miles"
+msgstr "नॉटिकल मील"
+
+#: ../src/unit.vala:45
+msgid "Miles"
+msgstr "मील"
+
+#: ../src/unit.vala:46
+msgid "Kilometers"
+msgstr "किलोमीटर"
+
+#: ../src/unit.vala:47
+msgid "Cables"
+msgstr "केबल"
+
+#: ../src/unit.vala:48
+msgid "Fathoms"
+msgstr "फैदम"
+
+#: ../src/unit.vala:49
+msgid "Meters"
+msgstr "मीटर"
+
+#: ../src/unit.vala:50
+msgid "Yards"
+msgstr "गज"
+
+#: ../src/unit.vala:51
+msgid "Feet"
+msgstr "फीट"
+
+#: ../src/unit.vala:52
+msgid "Inches"
+msgstr "इंचेस"
+
+#: ../src/unit.vala:53
+msgid "Centimeters"
+msgstr "सेन्टीमीटर"
+
+#: ../src/unit.vala:54
+msgid "Millimeters"
+msgstr "मिलीमीटर्स"
+
+#: ../src/unit.vala:55
+msgid "Micrometers"
+msgstr "माइक्रोमीटर"
+
+#: ../src/unit.vala:56
+msgid "Nanometers"
+msgstr "नैनोमीटर"
+
+#: ../src/unit.vala:57
+msgid "Hectares"
+msgstr "हेक्टामीटर"
+
+#: ../src/unit.vala:58
+msgid "Acres"
+msgstr "एकड़"
+
+#: ../src/unit.vala:59
+msgid "Square Meters"
+msgstr "वर्ग मीटर"
+
+#: ../src/unit.vala:60
+msgid "Square Centimeters"
+msgstr "वर्ग सेन्टीमीटर"
+
+#: ../src/unit.vala:61
+msgid "Square Millimeters"
+msgstr "वर्ग मिलीमीटर "
+
+#: ../src/unit.vala:62
+msgid "Cubic Meters"
+msgstr "घन मीटर"
+
+#: ../src/unit.vala:63
+msgid "Gallons"
+msgstr "गैलन"
+
+#: ../src/unit.vala:64
+msgid "Litres"
+msgstr "लीटर"
+
+#: ../src/unit.vala:65
+msgid "Quarts"
+msgstr "क्वार्ट्स"
+
+#: ../src/unit.vala:66
+msgid "Pints"
+msgstr "पिंट्स"
+
+#: ../src/unit.vala:67
+msgid "Millilitres"
+msgstr "मिलीलीटर"
+
+#: ../src/unit.vala:68
+msgid "Microlitres"
+msgstr "माइक्रोलीटर"
+
+#: ../src/unit.vala:69
+msgid "Tonnes"
+msgstr "टन"
+
+#: ../src/unit.vala:70
+msgid "Kilograms"
+msgstr "किलोग्राम"
+
+#: ../src/unit.vala:71
+msgid "Pounds"
+msgstr "पाउंड"
+
+#: ../src/unit.vala:72
+msgid "Ounces"
+msgstr "औंस"
+
+#: ../src/unit.vala:73
+msgid "Grams"
+msgstr "ग्राम"
+
+#: ../src/unit.vala:74
+msgid "Years"
+msgstr "वर्ष"
+
+#: ../src/unit.vala:75
+msgid "Days"
+msgstr "दिन"
+
+#: ../src/unit.vala:76
+msgid "Hours"
+msgstr "घंटे"
+
+#: ../src/unit.vala:77
+msgid "Minutes"
+msgstr "मिनट"
+
+#: ../src/unit.vala:78
+msgid "Seconds"
+msgstr "सेकेंड"
+
+#: ../src/unit.vala:79
+msgid "Milliseconds"
+msgstr "मिलीसेंकेंड"
+
+#: ../src/unit.vala:80
+msgid "Microseconds"
+msgstr "माइक्रोसेंकेंड"
+
+#: ../src/unit.vala:81
+msgid "Celsius"
+msgstr "सेल्सियस"
+
+#: ../src/unit.vala:82
+msgid "Farenheit"
+msgstr "फारेनहाइट"
+
+#: ../src/unit.vala:83
+msgid "Kelvin"
+msgstr "केल्विन"
+
+#: ../src/unit.vala:84
+msgid "Rankine"
+msgstr "Rankine"
+
+#: ../src/unit.vala:86
 msgid "Currency"
 msgstr "मुद्रा"
 
 #. Translators: result of currency conversion, %s is the symbol, %%s is the placeholder for amount, i.e.: USD100
-#: ../src/unit-manager.c:137
+#: ../src/unit.vala:92
 #, c-format
 msgid "%s%%s"
 msgstr "%s%%s"
+
+#~ msgid "8-bit"
+#~ msgstr "8- बिट"
+
+#~ msgid "16-bit"
+#~ msgstr "16-बिट"
+
+#~ msgid "32-bit"
+#~ msgstr "32- बिट"
+
+#~ msgid "64-bit"
+#~ msgstr "64-बिट"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s degrees"
+#~ msgstr "%s डिग्री"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "degree,degrees,deg"
+#~ msgstr "डिग्री, डिग्रीज, डिग्री"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s radians"
+#~ msgstr "%s रेडियन"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "radian,radians,rad"
+#~ msgstr "रेडियन, रेडियन्स, रेड"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s gradians"
+#~ msgstr "%s ग्रेडियन्स"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "gradian,gradians,grad"
+#~ msgstr "ग्रेडियन, ग्रेडियन्स, ग्रैड"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s pc"
+#~ msgstr "%s pc"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "parsec,parsecs,pc"
+#~ msgstr "parsec,parsecs,pc"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ly"
+#~ msgstr "%s ly"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "lightyear,lightyears,ly"
+#~ msgstr "lightyear,lightyears,ly"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s au"
+#~ msgstr "%s au"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "au"
+#~ msgstr "au"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s nmi"
+#~ msgstr "%s nmi"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "nmi"
+#~ msgstr "nmi"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s mi"
+#~ msgstr "%s mi"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "mile,miles,mi"
+#~ msgstr "मील,मील,mi"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s km"
+#~ msgstr "%s किमी"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "kilometer,kilometers,km,kms"
+#~ msgstr "किलोमीटर, किलोमीटर, किमी, किलोमीटर"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s cb"
+#~ msgstr "%s cb"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "cable,cables,cb"
+#~ msgstr "केबल, केबल्स, सीबी"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ftm"
+#~ msgstr "%s ftm"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "fathom,fathoms,ftm"
+#~ msgstr "फैदम, फैदम्स, ftm"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s m"
+#~ msgstr "%s मी"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "meter,meters,m"
+#~ msgstr "मीटर, मीटर्स, मी"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s yd"
+#~ msgstr "%s yd"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "yard,yards,yd"
+#~ msgstr "गज, गज, गज"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ft"
+#~ msgstr "%s फीट"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "foot,feet,ft"
+#~ msgstr "फुट, फीट, ft"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s in"
+#~ msgstr "%s in"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "inch,inches,in"
+#~ msgstr "इंच,इंच,in"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s cm"
+#~ msgstr "%s cm"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "centimeter,centimeters,cm,cms"
+#~ msgstr "सेंटीमीटर, सेंटीमीटर, सीएम, सीएमएस"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s mm"
+#~ msgstr "%s मिमी"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "millimeter,millimeters,mm"
+#~ msgstr "मिलीमीटर , मिलीमीटर, मिमी"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s μm"
+#~ msgstr "%s μm"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "micrometer,micrometers,um"
+#~ msgstr "माइक्रोमीटर, माइक्रोमीटर, um"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s nm"
+#~ msgstr "%s nm"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "nanometer,nanometers,nm"
+#~ msgstr "नैनोमीटर, नैनोमीटर, nm"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ha"
+#~ msgstr "%s ha"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "hectare,hectares,ha"
+#~ msgstr "हेक्टेयर, हेक्टेयर, ha"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s acres"
+#~ msgstr "%s एकड़"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "acre,acres"
+#~ msgstr "एकड़,एकड़"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s m²"
+#~ msgstr "%s m²"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "m²"
+#~ msgstr "m²"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s cm²"
+#~ msgstr "%s cm²"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "cm²"
+#~ msgstr "cm²"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s mm²"
+#~ msgstr "%s mm²"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "mm²"
+#~ msgstr "mm²"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s m³"
+#~ msgstr "%s m³"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "m³"
+#~ msgstr "m³"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s gal"
+#~ msgstr "%s gal"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "gallon,gallons,gal"
+#~ msgstr "गैलन, गैलन, गैल"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s L"
+#~ msgstr "%s L"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "litre,litres,liter,liters,L"
+#~ msgstr "लीटर, लीटर्स, लीटर, लीटर्स, L"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s qt"
+#~ msgstr "%s qt"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "quart,quarts,qt"
+#~ msgstr "क्वार्ट, क्वार्ट्स, qt"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s pt"
+#~ msgstr "%s pt"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "pint,pints,pt"
+#~ msgstr "pint,pints,pt"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s mL"
+#~ msgstr "%s mL"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "millilitre,millilitres,milliliter,milliliters,mL,cm³"
+#~ msgstr "मिलीलीटर, मिलीलीटर, मिलीलीटर,मिलीलीटर, mL,cm³"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s μL"
+#~ msgstr "%s μL"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "mm³,μL,uL"
+#~ msgstr "mm³,μL,uL"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s T"
+#~ msgstr "%s T"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "tonne,tonnes"
+#~ msgstr "टन, टन"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s kg"
+#~ msgstr "%s किग्रा"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "kilogram,kilograms,kilogramme,kilogrammes,kg,kgs"
+#~ msgstr "किलोग्राम, किलोग्राम, किलोग्राम,किलोग्राम, किलोग्राम, किग्रा, किग्रा"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s lb"
+#~ msgstr "%s lb"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "pound,pounds,lb"
+#~ msgstr "पाउंड, पाउंड, lb"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s oz"
+#~ msgstr "%s oz"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "ounce,ounces,oz"
+#~ msgstr "औंस, औंस, oz"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s g"
+#~ msgstr "%s g"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "gram,grams,gramme,grammes,g"
+#~ msgstr "ग्राम, ग्राम, ग्राम, ग्राम, g"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s years"
+#~ msgstr "%s वर्ष"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "year,years"
+#~ msgstr "वर्ष, वर्ष"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s days"
+#~ msgstr "%s दिन"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "day,days"
+#~ msgstr "दिन, दिन"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s hours"
+#~ msgstr "%s घंटे"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "hour,hours"
+#~ msgstr "घंटे, घंटे भर"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s minutes"
+#~ msgstr "%s मिनट"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "minute,minutes"
+#~ msgstr "मिनट, मिनट"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s s"
+#~ msgstr "%s s"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "second,seconds,s"
+#~ msgstr "सेंकेंड, सेंकेंड, से"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ms"
+#~ msgstr "%s ms"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "millisecond,milliseconds,ms"
+#~ msgstr "मिलीसेंकेंड, मिलीसेंकेंड, मिलीसे."
+
+#~ msgctxt "unit-format"
+#~ msgid "%s μs"
+#~ msgstr "%s μs"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "microsecond,microseconds,us,μs"
+#~ msgstr "माइक्रोसेंकेंड, माइक्रोसेंकेंड, us,μs"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ˚C"
+#~ msgstr "%s ˚C"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "degC,˚C"
+#~ msgstr "degC,˚C"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ˚F"
+#~ msgstr "%s ˚F"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "degF,˚F"
+#~ msgstr "degF,˚F"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s K"
+#~ msgstr "%s K"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "K"
+#~ msgstr "के"
+
+#~ msgctxt "unit-format"
+#~ msgid "%s ˚R"
+#~ msgstr "%s ˚R"
+
+#~ msgctxt "unit-symbols"
+#~ msgid "degR,˚R,˚Ra"
+#~ msgstr "degR,˚R,˚Ra"
 
 #~ msgid "<i>x</i>"
 #~ msgstr "<i>x</i>"
