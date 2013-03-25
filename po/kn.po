@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=http://"
 "bugzilla.gnome.org/&keywords=I18N+L10N&component=general\n"
 "POT-Creation-Date: 2013-03-15 15:25+0000\n"
-"PO-Revision-Date: 2013-03-26 00:38+0530\n"
+"PO-Revision-Date: 2013-03-26 00:41+0530\n"
 "Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
 "Language: en_US\n"
@@ -94,17 +94,17 @@ msgstr "ಚಕ್ರಬಡ್ಡಿ ಲೆಕ್ಕಾಚಾರದ ಅಂಶ"
 #. Payment Period Dialog: Button to calculate result
 #: ../data/buttons-financial.ui.h:4
 msgid "C_alculate"
-msgstr "ಲೆಕ್ಕಹಾಕು (_a)"
+msgstr "ಲೆಕ್ಕಹಾಕು(_a)"
 
 #. Periodic Interest Rate Dialog: Label before present value input
 #: ../data/buttons-financial.ui.h:6
 msgid "Present _Value:"
-msgstr "ಪ್ರಸಕ್ತ ಮೌಲ್ಯ (_V):"
+msgstr "ಪ್ರಸಕ್ತ ಮೌಲ್ಯ(_V):"
 
 #. Payment Period Dialog: Label before periodic interest rate input
 #: ../data/buttons-financial.ui.h:8
 msgid "Periodic Interest _Rate:"
-msgstr "ನಿಯಮಿತ ಬಡ್ಡಿ ದರ (_R):"
+msgstr "ನಿಯಮಿತ ಬಡ್ಡಿ ದರ(_R):"
 
 #. Compounding Term Dialog: Description of calculation
 #: ../data/buttons-financial.ui.h:10
